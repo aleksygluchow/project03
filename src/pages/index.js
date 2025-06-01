@@ -3,6 +3,7 @@ export default function Home() {
     <div>
       <h1>Welcome to My Site</h1>
       <p>Im a Physics Masters student interested in science, code, and creativity..</p>
+      <p>Co tam Julka?..</p>
     </div>
   );
 }
