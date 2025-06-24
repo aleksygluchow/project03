@@ -29,7 +29,7 @@ const styles = {
     padding: '2rem',
     backgroundColor: '#fff',
     borderRadius: '8px',
-    boxShadow: '4px 4px 4px 10px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 10px 10px rgba(0, 0, 0, 0.1)',
   },
   header: {
     fontSize: '2rem',
