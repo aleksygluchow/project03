@@ -34,7 +34,7 @@ export async function getStaticProps() {
 
 export default function Blog({ posts }) {
   return (
-    <div style={{ maxWidth: '700px', margin: '2rem auto', padding: '0 1rem' }}>
+    <div style={{ maxWidth: '700px', margin: '2rem auto', padding: '0 0.5rem' }}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>My Blog</h1>
       {posts.length === 0 && <p>No blog posts found.</p>}
       {posts.map((post) => (
