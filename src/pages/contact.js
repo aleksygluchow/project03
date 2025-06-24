@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div style={styles.container}>
       <h1 style={styles.header}>Contact Me</h1>
-      <p style={styles.text}> I'm always happy to connect. Feel free to reach out through any of the platforms below:</p>
+      <p style={styles.text}> Im always happy to connect. Feel free to reach out through any of the platforms below:</p>
 
       <ul style={styles.list}>
         <li style={styles.item}>
