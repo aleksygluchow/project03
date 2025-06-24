@@ -31,3 +31,18 @@ export async function getStaticProps() {
     };
   }
 }
+
+export default function Blog({ posts }) {
+  return (
+    <div>
+      <h1>My Blog</h1>
+      {posts.length === 0 && <p>No blog posts found.</p>}
+      {posts.map((post) => (
+        <article key={post.id}>
+          <h2>{post.title}</h2>
+          <p>{post.content}</p>
+        </article>
+      ))}
+    </div>
+  );
+}
