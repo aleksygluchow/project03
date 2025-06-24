@@ -34,8 +34,8 @@ export default function About() {
       <hr />
       <h2>Scientific Conferences</h2>
       <ul>
-        <li><strong>Sempowisko</strong> (May 2025): Talk: <em>"Reimagining Spectroscopy: The Capabilities of ZULF NMR"</em></li>
-        <li><strong>SMOK Conference</strong> (April 2025): Talk: <em>"Spectroscopy in the Absence of Magnets"</em></li>
+        <li><strong>Sempowisko</strong> (May 2025): Talk: <em> Reimagining Spectroscopy: The Capabilities of ZULF NMR </em></li>
+        <li><strong>SMOK Conference</strong> (April 2025): Talk: <em> Spectroscopy in the Absence of Magnets </em></li>
         <li><strong>SMOK Conference</strong> (May 2024): Attendee</li>
       </ul>
 
