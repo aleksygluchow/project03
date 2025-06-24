@@ -1,4 +1,5 @@
 import { client } from '../../lib/contentful';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 export async function getStaticProps() {
   try {
@@ -11,7 +12,7 @@ export async function getStaticProps() {
     const posts = res.items.map((item) => ({
       id: item.sys.id,
       title: item.fields.title,
-      content: item.fields.content || '',
+      content: item.fields.content, // raw rich text document
     }));
 
     return {
@@ -22,10 +23,9 @@ export async function getStaticProps() {
     };
   } catch (err) {
     console.error('Error fetching blog posts:', err.message);
-
     return {
       props: {
-        posts: [], // fallback to empty array
+        posts: [],
       },
       revalidate: 10,
     };
@@ -40,7 +40,8 @@ export default function Blog({ posts }) {
       {posts.map((post) => (
         <article key={post.id}>
           <h2>{post.title}</h2>
-          <p>{post.content}</p>
+          {/* ✅ render rich text safely */}
+          <div>{documentToReactComponents(post.content)}</div>
         </article>
       ))}
     </div>
