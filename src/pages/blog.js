@@ -1,34 +1,33 @@
-import { client } from '../../lib/contentful'; // Correct path to contentful.js
+import { client } from '../../lib/contentful';
 
 export async function getStaticProps() {
-  // Fetch blog posts from Contentful
-  const res = await client.getEntries({ content_type: 'Blog' }); // Use the correct content type ID for blog posts
-  
-  // Map the data from Contentful to match your desired structure
-  const posts = res.items.map((item) => ({
-    id: item.sys.id,
-    title: item.fields.title,
-    content: item.fields.content,
-  }));
+  try {
+    const res = await client.getEntries({ content_type: 'blog' });
 
-  return {
-    props: {
-      posts,
-    },
-    revalidate: 10, // Optional: revalidate every 10 seconds for updated content
-  };
-}
+    if (!res.items) {
+      throw new Error('No blog posts returned from Contentful');
+    }
 
-export default function Blog({ posts }) {
-  return (
-    <div>
-      <h1>My Blog</h1>
-      {posts.map((post) => (
-        <article key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.content}</p>
-        </article>
-      ))}
-    </div>
-  );
+    const posts = res.items.map((item) => ({
+      id: item.sys.id,
+      title: item.fields.title,
+      content: item.fields.content || '',
+    }));
+
+    return {
+      props: {
+        posts,
+      },
+      revalidate: 10,
+    };
+  } catch (err) {
+    console.error('Error fetching blog posts:', err.message);
+
+    return {
+      props: {
+        posts: [], // fallback to empty array
+      },
+      revalidate: 10,
+    };
+  }
 }
