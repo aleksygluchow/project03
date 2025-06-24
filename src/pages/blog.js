@@ -2,7 +2,7 @@ import { client } from '../../lib/contentful'; // Correct path to contentful.js
 
 export async function getStaticProps() {
   // Fetch blog posts from Contentful
-  const res = await client.getEntries({ content_type: 'blogPost' }); // Use the correct content type ID for blog posts
+  const res = await client.getEntries({ content_type: 'Blog' }); // Use the correct content type ID for blog posts
   
   // Map the data from Contentful to match your desired structure
   const posts = res.items.map((item) => ({
