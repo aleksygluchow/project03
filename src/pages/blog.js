@@ -3,17 +3,23 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 export async function getStaticProps() {
   try {
-    const res = await client.getEntries({ content_type: 'blog' });
+    const res = await client.getEntries({ 
+      content_type: 'blog',
+      order: '-fields.publishDate' // newest first!
+     });
 
     if (!res.items) {
       throw new Error('No blog posts returned from Contentful');
     }
 
-    const posts = res.items.map((item) => ({
-      id: item.sys.id,
-      title: item.fields.title,
-      content: item.fields.content,
-    }));
+    const posts = res.items
+  .filter(item => item.fields.publishDate) // ensure date is present
+  .map((item) => ({
+    id: item.sys.id,
+    title: item.fields.title,
+    content: item.fields.content,
+    publishDate: item.fields.publishDate,
+  }));
 
     return {
       props: {
@@ -51,6 +57,10 @@ export default function Blog({ posts }) {
           onMouseEnter={e => e.currentTarget.style.boxShadow = '0 6px 24px rgba(0, 0, 0, 0.12)'}
           onMouseLeave={e => e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.08)'}
         >
+
+          <small style={{ color: '#666', fontSize: '0.9rem' }}>
+    {new Date(post.publishDate).toLocaleDateString()}
+  </small>
           <h2 style={{ marginTop: 0 }}>{post.title}</h2>
           <div>{documentToReactComponents(post.content)}</div>
         </article>
