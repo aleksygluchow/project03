@@ -3,7 +3,7 @@ export default function Home() {
     <div style={styles.container}>
       <h1 style={styles.header}>Welcome to My Site</h1>
       <div style={styles.card}>
-        <img src="/zdj.HEIC" alt="Юля" style={styles.image} />
+        <img src="/zdj.jpg" alt="Юля" style={styles.image} />
         <p style={styles.text}>Привет Юля</p>
       </div>
     </div>
