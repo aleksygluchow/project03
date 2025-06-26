@@ -1,5 +1,11 @@
 import Head from 'next/head';
 
+// add to the top of your component file
+import { useEffect, useState } from 'react';
+
+const isMobile = typeof window !== 'undefined' && window.innerWidth <= 500;
+
+
 const styles = {
   container: {
     maxWidth: '900px',
