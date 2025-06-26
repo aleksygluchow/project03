@@ -45,7 +45,7 @@ export default function Blog({ posts }) {
   return (
   <>
       <Head>
-        <title>Home – Aliaksei Hlukhau</title>
+        <title>Blog</title>
       </Head>
     <div style={{ maxWidth: '700px', margin: '2rem auto', padding: '0 0.5rem' }}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>My Blog</h1>

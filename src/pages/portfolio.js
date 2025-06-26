@@ -5,7 +5,7 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-        <title>Home – Aliaksei Hlukhau</title>
+        <title>Portfolio</title>
       </Head>
 
     <div>

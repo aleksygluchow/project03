@@ -6,7 +6,7 @@ export default function Contact() {
 
     <>
       <Head>
-        <title>Home – Aliaksei Hlukhau</title>
+        <title>Contact</title>
       </Head>
 
     <div style={styles.container}>
