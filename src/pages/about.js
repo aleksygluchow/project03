@@ -77,8 +77,8 @@ export default function About() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold border-b pb-1 mb-2">Scientific Conferences</h2>
           <ul className="list-disc list-inside pl-2 text-sm space-y-1">
-            <li><strong>Sempowisko</strong> (May 2025): <em>"Reimagining Spectroscopy: The Capabilities of ZULF NMR"</em></li>
-            <li><strong>SMOK Conference</strong> (April 2025): <em>"Spectroscopy in the Absence of Magnets: ZULF NMR"</em></li>
+            <li><strong>Sempowisko</strong> (May 2025): <em> &#34;	Reimagining Spectroscopy: The Capabilities of ZULF NMR&#34;	</em></li>
+            <li><strong>SMOK Conference</strong> (April 2025): <em>&#34;	Spectroscopy in the Absence of Magnets: ZULF NMR&#34;	</em></li>
             <li><strong>SMOK Conference</strong> (May 2024): Attendee</li>
           </ul>
         </section>
