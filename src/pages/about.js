@@ -8,15 +8,15 @@ const isMobile = typeof window !== 'undefined' && window.innerWidth <= 500;
 
 const styles = {
   container: {
-    maxWidth: '900px',
-    margin: '0 auto',
-    padding: '1rem 0.75rem 2rem',
-    fontFamily: '"Space Grotesk", "Inter", system-ui, sans-serif',
-    backgroundColor: '#fefefe',
-    color: '#1f1f1f',
-    lineHeight: 1.6,
-    fontSize: '0.95rem',
-  },
+  maxWidth: '900px',
+  margin: '0 auto',
+  padding: '1rem 0.75rem 2rem',
+  fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  backgroundColor: '#fefefe',
+  color: '#1f1f1f',
+  lineHeight: 1.6,
+  fontSize: '0.95rem',
+},
   name: {
     textAlign: 'center',
     fontSize: '2.2rem',
@@ -87,7 +87,6 @@ export default function About() {
       <Head>
         <Head>
   <title>CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
 </Head>
 
       </Head>
