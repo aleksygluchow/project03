@@ -10,50 +10,74 @@ const styles = {
   container: {
     maxWidth: '900px',
     margin: '0 auto',
-    padding: '0.75rem 1rem 1.5rem 1rem', // ↓ less vertical padding
-    fontFamily: '"Inter", "Segoe UI", system-ui, sans-serif',
-    backgroundColor: '#fcfcff',
-    color: '#1b1b1b',
+    padding: '1rem 0.75rem 2rem',
+    fontFamily: '"Space Grotesk", "Inter", system-ui, sans-serif',
+    backgroundColor: '#fefefe',
+    color: '#1f1f1f',
     lineHeight: 1.6,
-    fontSize: '0.94rem',
+    fontSize: '0.95rem',
   },
   name: {
     textAlign: 'center',
-    fontSize: '2rem', // ↓ smaller for mobile
+    fontSize: '2.2rem',
     fontWeight: 800,
-    marginBottom: '0.1rem', // ↓ less space below
-    marginTop: '0.5rem',     // ↓ tighter top margin
+    marginBottom: '0.2rem',
+    marginTop: '0.4rem',
     color: '#111827',
   },
   subtitle: {
     textAlign: 'center',
     fontStyle: 'italic',
-    color: '#6b7280',
     fontSize: '0.9rem',
-    marginBottom: '0.3rem', // ↓ tighten below
+    color: '#6b7280',
+    marginBottom: '1.2rem',
   },
-  contact: {
+  contactBox: {
     textAlign: 'center',
-    marginBottom: '1.2rem', // ↓ less gap to next section
-    fontSize: '0.88rem',
-    color: '#374151',
+    padding: '0.8rem 1rem',
+    backgroundColor: '#f3f4f6',
+    borderRadius: '8px',
+    marginBottom: '1.8rem',
+    fontSize: '0.9rem',
+    boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
+  },
+  contactItem: {
+    marginBottom: '0.4rem',
+  },
+  contactLabel: {
+    fontWeight: 500,
+    color: '#4b5563',
+    marginRight: '0.3rem',
+  },
+  link: {
+    color: '#2563eb',
+    textDecoration: 'none',
+    fontWeight: 500,
   },
   sectionTitle: {
-    fontSize: '1.4rem', // slightly smaller for better scale
+    fontSize: '1.4rem',
     color: '#1d4ed8',
-    borderBottom: '2px solid #dbeafe',
-    paddingBottom: '0.2rem',
-    marginTop: '1.5rem',  // ↓ tighter top spacing
+    borderBottom: '1px solid #c7d2fe',
+    paddingBottom: '0.3rem',
+    marginTop: '1.6rem',
     marginBottom: '0.9rem',
     fontWeight: 700,
   },
+  paragraph: {
+    marginBottom: '0.5rem',
+  },
+  list: {
+    paddingLeft: '1.2rem',
+    marginBottom: '1rem',
+  },
+  listItem: {
+    marginBottom: '0.35rem',
+  },
   hr: {
-    border: 'none',
-    height: '1px',
-    backgroundColor: '#e5e7eb',
-    margin: '1.2rem 0',
+    display: 'none', // removed because section borders look cleaner now
   },
 };
+
 
 
 
@@ -61,22 +85,35 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>CV</title>
+        <Head>
+  <title>CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+</Head>
+
       </Head>
       <div style={styles.container}>
         <h1 style={styles.name}>Aliaksei Hlukhau</h1>
         <p style={styles.subtitle}>(pronounced: Aleksy Głuchow)</p>
 
-        <p style={styles.contact}>
-          Phone: (+48) 728 035 080 | Email:{' '}
-          <a href="mailto:aliaksei.hlukhau@student.uj.edu.pl" style={styles.link}>
-            aliaksei.hlukhau@student.uj.edu.pl
-          </a>{' '}
-          | LinkedIn:{' '}
-          <a href="https://www.linkedin.com/in/aleksyg/" target="_blank" rel="noopener noreferrer" style={styles.link}>
-            aleksyg
-          </a>
-        </p>
+        <div style={styles.contactBox}>
+  <div style={styles.contactItem}>
+    <span style={styles.contactLabel}>Phone:</span>
+    <a href="tel:+48728035080" style={styles.link}>(+48) 728 035 080</a>
+  </div>
+  <div style={styles.contactItem}>
+    <span style={styles.contactLabel}>Email:</span>
+    <a href="mailto:aliaksei.hlukhau@student.uj.edu.pl" style={styles.link}>
+      aliaksei.hlukhau@student.uj.edu.pl
+    </a>
+  </div>
+  <div style={styles.contactItem}>
+    <span style={styles.contactLabel}>LinkedIn:</span>
+    <a href="https://www.linkedin.com/in/aleksyg/" target="_blank" rel="noopener noreferrer" style={styles.link}>
+      aleksyg
+    </a>
+  </div>
+</div>
+
 
         <hr style={styles.hr} />
         <h2 style={styles.sectionTitle}>Education</h2>
