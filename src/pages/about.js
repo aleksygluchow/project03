@@ -1,5 +1,12 @@
+import Head from 'next/head';
+
+
 export default function About() {
   return (
+  <>
+      <Head>
+        <title>Home – Aliaksei Hlukhau</title>
+      </Head>
     <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
       <h1 style={{ textAlign: 'center' }}>Aliaksei Hlukhau</h1>
       <p style={{ textAlign: 'center' }}><em>(pronounced: Aleksy Głuchow)</em></p>
@@ -94,5 +101,6 @@ export default function About() {
         <li>Programming in JavaScript</li>
       </ul>
     </div>
+    </>
   );
 }

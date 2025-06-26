@@ -1,3 +1,6 @@
+import Head from 'next/head';
+
+
 import { client } from '../../lib/contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
@@ -40,6 +43,10 @@ export async function getStaticProps() {
 
 export default function Blog({ posts }) {
   return (
+  <>
+      <Head>
+        <title>Home – Aliaksei Hlukhau</title>
+      </Head>
     <div style={{ maxWidth: '700px', margin: '2rem auto', padding: '0 0.5rem' }}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>My Blog</h1>
       {posts.length === 0 && <p>No blog posts found.</p>}
@@ -66,5 +73,6 @@ export default function Blog({ posts }) {
         </article>
       ))}
     </div>
+    </>
   );
 }

@@ -1,5 +1,14 @@
+import Head from 'next/head';
+
+
 export default function Contact() {
   return (
+
+    <>
+      <Head>
+        <title>Home – Aliaksei Hlukhau</title>
+      </Head>
+
     <div style={styles.container}>
       <h1 style={styles.header}>Contact Me</h1>
       <p style={styles.text}> Im always happy to connect. Feel free to reach out through any of the platforms below:</p>
@@ -19,6 +28,8 @@ export default function Contact() {
         </li>
       </ul>
     </div>
+
+    </>
   );
 }
 
