@@ -100,7 +100,7 @@ export default function About() {
     <a href="tel:+48728035080" style={styles.link}>(+48) 728 035 080</a>
   </div>
   <div style={styles.contactItem}>
-    <span style={styles.contactLabel}>Email:</span>
+    <span style={styles.contactLabel}></span>
     <a href="mailto:aliaksei.hlukhau@student.uj.edu.pl" style={styles.link}>
       aliaksei.hlukhau@student.uj.edu.pl
     </a>
