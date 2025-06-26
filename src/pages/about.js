@@ -4,65 +4,51 @@ const styles = {
   container: {
     maxWidth: '900px',
     margin: '0 auto',
-    padding: '1rem 1rem 2rem 1rem',
+    padding: '0.75rem 1rem 1.5rem 1rem', // ↓ less vertical padding
     fontFamily: '"Inter", "Segoe UI", system-ui, sans-serif',
     backgroundColor: '#fcfcff',
     color: '#1b1b1b',
-    lineHeight: 1.65,
-    fontSize: '0.96rem',
+    lineHeight: 1.6,
+    fontSize: '0.94rem',
   },
   name: {
     textAlign: 'center',
-    fontSize: '2.4rem',
+    fontSize: '2rem', // ↓ smaller for mobile
     fontWeight: 800,
-    marginBottom: '0.2rem',
+    marginBottom: '0.1rem', // ↓ less space below
+    marginTop: '0.5rem',     // ↓ tighter top margin
     color: '#111827',
-    letterSpacing: '-0.5px',
   },
   subtitle: {
     textAlign: 'center',
     fontStyle: 'italic',
     color: '#6b7280',
-    marginBottom: '0.8rem',
+    fontSize: '0.9rem',
+    marginBottom: '0.3rem', // ↓ tighten below
   },
   contact: {
     textAlign: 'center',
-    marginBottom: '2rem',
-    fontSize: '0.92rem',
+    marginBottom: '1.2rem', // ↓ less gap to next section
+    fontSize: '0.88rem',
     color: '#374151',
   },
-  link: {
-    color: '#2563eb',
-    textDecoration: 'none',
-    fontWeight: 500,
-  },
   sectionTitle: {
-    fontSize: '1.5rem',
+    fontSize: '1.4rem', // slightly smaller for better scale
     color: '#1d4ed8',
     borderBottom: '2px solid #dbeafe',
-    paddingBottom: '0.25rem',
-    marginTop: '1.8rem',
-    marginBottom: '1rem',
+    paddingBottom: '0.2rem',
+    marginTop: '1.5rem',  // ↓ tighter top spacing
+    marginBottom: '0.9rem',
     fontWeight: 700,
-  },
-  list: {
-    paddingLeft: '1.1rem',
-    marginTop: '-0.4rem',
-  },
-  listItem: {
-    marginBottom: '0.35rem',
-  },
-  paragraph: {
-    marginBottom: '0.45rem',
-    color: '#1f2937',
   },
   hr: {
     border: 'none',
     height: '1px',
     backgroundColor: '#e5e7eb',
-    margin: '1.5rem 0',
+    margin: '1.2rem 0',
   },
 };
+
 
 
 export default function About() {
