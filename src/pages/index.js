@@ -9,7 +9,15 @@ export default function Home() {
 
       <div>
         <h1>Welcome to My Site</h1>
-        <p>Now in Germany 🇩🇪</p>
+        <p>
+  Now in Germany{' '}
+  <img
+    src="https://flagcdn.com/w40/de.png"
+    alt="German flag"
+    width="20"
+    style={{ display: 'inline-block', verticalAlign: 'middle' }}
+  />
+</p>
       </div>
     </>
   );
