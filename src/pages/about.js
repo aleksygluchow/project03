@@ -42,10 +42,6 @@ export default function About() {
 
       <p><strong>Visiting Student Assistant</strong> (Supervisor: Prof. Dmitri Budker) (2025 July – August)</p>
       <p>Experimental research at the Photonics Department, Faculty of Physics. Project: Zero- and ultra-low-field nuclear magnetic resonance.</p>
-w
-
-
-
 
       <p><strong>Research Assistant (Volunteer)</strong> (2024 – present)</p>
       <p>Experimental research at the Photonics Department, Faculty of Physics. Project: Zero- and ultra-low-field nuclear magnetic resonance.</p>
