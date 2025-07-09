@@ -9,7 +9,7 @@ export default function Home() {
 
       <div>
         <h1>Welcome to My Site</h1>
-        <p>hi Herman..</p>
+        <p>Now in Germany 🇩🇪</p>
       </div>
     </>
   );
