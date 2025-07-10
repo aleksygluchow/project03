@@ -40,23 +40,45 @@ export default function About() {
       <h2>Work Experience</h2>
 
 
-      <p><strong>Visiting Student Assistant</strong> (Supervisor: Prof. Dmitri Budker) (2025 July – August)</p>
-      <p>Experimental research at the Helmholtz Institute Mainz, Johannes Gutenberg University Mainz, Faculty of Physics. Project: Zero- and ultra-low-field nuclear magnetic resonance, conducted in the Budker Group under the supervision of Prof. Dmitri Budker.</p>
+      <div style="margin-bottom: 1.5em;">
+  <strong>Visiting Student Assistant</strong>  
+  <span style="float:right;"><em>July – August 2025</em></span><br>
+  <em>Helmholtz Institute Mainz, Johannes Gutenberg University Mainz</em><br>
+  Supervisor: Prof. Dmitri Budker<br>
+  <ul>
+    <li>Experimental research in zero- and ultra-low-field nuclear magnetic resonance</li>
+    <li>Conducted as part of the Budker Group</li>
+  </ul>
+</div>
 
-      <p><strong>Research Assistant (Volunteer)</strong> (2024 – present)</p>
-      <p>Experimental research at the Photonics Department, Faculty of Physics. Project: Zero- and ultra-low-field nuclear magnetic resonance.</p>
+<div style="margin-bottom: 1.5em;">
+  <strong>Research Assistant (Volunteer)</strong>  
+  <span style="float:right;"><em>2024 – present</em></span><br>
+  <em>Photonics Department, Faculty of Physics, Jagiellonian University</em><br>
+  <ul>
+    <li>Experimental research in zero- and ultra-low-field nuclear magnetic resonance</li>
+  </ul>
+</div>
 
-      <p><strong>Summer Internship at the Photonics Department</strong> (Supervisor: Prof. Szymon Pustelny) (July 2024)</p>
-      <ul>
-        <li>Laboratory work on the GNOME project, focused on dark matter research</li>
-        <li>Built and configured several spectroscopy systems on an optical table</li>
-      </ul>
+<div style="margin-bottom: 1.5em;">
+  <strong>Summer Internship – Photonics Department</strong>  
+  <span style="float:right;"><em>July 2024</em></span><br>
+  Supervisor: Prof. Szymon Pustelny<br>
+  <ul>
+    <li>Worked on the GNOME project focused on dark matter detection</li>
+    <li>Built and configured spectroscopy systems on an optical table</li>
+  </ul>
+</div>
 
-      <p><strong>Additional Board Member, Student Physics Association (UJ)</strong> (2021/22, 2022/23)</p>
-      <ul>
-        <li>Helped organize events including the Winter School and SMOK Conference</li>
-        <li>Participated in club management (supplies, documentation, etc.)</li>
-      </ul>
+<div style="margin-bottom: 1.5em;">
+  <strong>Additional Board Member</strong>  
+  <span style="float:right;"><em>2021/22, 2022/23</em></span><br>
+  <em>Student Physics Association, Jagiellonian University</em><br>
+  <ul>
+    <li>Organized events such as the Winter School and SMOK Conference</li>
+    <li>Managed administrative duties (supplies, documentation, etc.)</li>
+  </ul>
+</div>
 
       <hr />
       <h2>Scientific Conferences</h2>
