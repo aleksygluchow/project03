@@ -21,6 +21,8 @@ export default function About() {
   <p><strong>Jagiellonian University</strong> (2021 – 2025)</p>
   <div style={{ position: 'relative', display: 'inline-block', marginBottom: '0.5rem' }}>
   <p><strong>Jagiellonian University</strong> (2021 – exp. 2025)</p>
+  <div style={{ position: 'relative', display: 'inline-block', marginBottom: '0.5rem' }}>
+  <p><strong>Jagiellonian University</strong> (2021 – exp. 2025)</p>
   <div style={{
     animation: 'float 3s ease-in-out infinite',
     position: 'absolute',
@@ -31,10 +33,18 @@ export default function About() {
     background: '#fff',
     borderRadius: '50%',
     boxShadow: '10px 0 #fff, -10px 0 #fff, 0 10px #fff',
-    opacity: 0.6,
+    opacity: 0.8,
     zIndex: 1,
-    pointerEvents: 'none'
-  }}></div>
+    pointerEvents: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '14px',
+    fontWeight: 'bold',
+    color: '#333'
+  }}>
+    🎓
+  </div>
 </div>
 
 <style jsx>{`
@@ -44,6 +54,7 @@ export default function About() {
     100% { transform: translateY(0px); }
   }
 `}</style>
+
 
 </div>
       <p>Bachelor’s Degree, Physics</p>
