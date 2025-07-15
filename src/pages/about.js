@@ -17,7 +17,22 @@ export default function About() {
 
       <hr />
       <h2>Education</h2>
-      <p><strong>Jagiellonian University</strong> (2021 – exp. 2025)</p>
+      <div style={{ position: 'relative', display: 'inline-block', marginBottom: '0.5rem' }}>
+  <p><strong>Jagiellonian University</strong> (2021 – exp. 2025)</p>
+  <div style={{
+    position: 'absolute',
+    top: '-10px',
+    left: '250px',
+    width: '40px',
+    height: '25px',
+    background: '#fff',
+    borderRadius: '50%',
+    boxShadow: '10px 0 #fff, -10px 0 #fff, 0 10px #fff',
+    opacity: 0.6,
+    zIndex: 1,
+    pointerEvents: 'none'
+  }}></div>
+</div>
       <p>Bachelor’s Degree, Physics</p>
       <p><strong>Selected courses:</strong></p>
       <ul>
