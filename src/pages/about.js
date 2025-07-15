@@ -11,9 +11,11 @@ export default function About() {
       <h1 style={{ textAlign: 'center' }}>Aliaksei Hlukhau</h1>
       <p style={{ textAlign: 'center' }}><em>(pronounced: Aleksy Głuchow)</em></p>
 
-      <p style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        Phone: (+48) 728 035 080 | Email: <a href="mailto:aliaksei.hlukhau@student.uj.edu.pl">aliaksei.hlukhau@student.uj.edu.pl</a> | LinkedIn: <a href="https://www.linkedin.com/in/aleksyg/" target="_blank">aleksyg</a>
-      </p>
+      <div className="contact-line">
+  <span>Phone: (+48) 728 035 080</span>
+  <span>Email: <a href="mailto:aliaksei.hlukhau@student.uj.edu.pl">aliaksei.hlukhau@student.uj.edu.pl</a></span>
+  <span>LinkedIn: <a href="https://www.linkedin.com/in/aleksyg/" target="_blank">aleksyg</a></span>
+</div>
 
       <hr />
       <h2>Education</h2>
