@@ -17,6 +17,9 @@ export default function Home() {
     width="20"
     style={{ display: 'inline-block', verticalAlign: 'middle' }}
   />
+
+
+  Hi Marcel
 </p>
       </div>
     </>
