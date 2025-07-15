@@ -17,46 +17,7 @@ export default function About() {
 
       <hr />
       <h2>Education</h2>
-      <div style={{ position: 'relative', display: 'inline-block', marginBottom: '0.5rem' }}>
-  <p><strong>Jagiellonian University</strong> (2021 – 2025)</p>
-  <div style={{ position: 'relative', display: 'inline-block', marginBottom: '0.5rem' }}>
-  <p><strong>Jagiellonian University</strong> (2021 – exp. 2025)</p>
-  <div style={{ position: 'relative', display: 'inline-block', marginBottom: '0.5rem' }}>
-  <p><strong>Jagiellonian University</strong> (2021 – exp. 2025)</p>
-  <div style={{
-    animation: 'float 3s ease-in-out infinite',
-    position: 'absolute',
-    top: '-10px',
-    left: '250px',
-    width: '40px',
-    height: '25px',
-    background: '#fff',
-    borderRadius: '50%',
-    boxShadow: '10px 0 #fff, -10px 0 #fff, 0 10px #fff',
-    opacity: 0.8,
-    zIndex: 1,
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '14px',
-    fontWeight: 'bold',
-    color: '#333'
-  }}>
-    🎓
-  </div>
-</div>
-
-<style jsx>{`
-  @keyframes float {
-    0%   { transform: translateY(0px); }
-    50%  { transform: translateY(-5px); }
-    100% { transform: translateY(0px); }
-  }
-`}</style>
-
-
-</div>
+      <p><strong>Jagiellonian University</strong> (2021 – 2025)</p> 
       <p>Bachelor’s Degree, Physics</p>
       <p><strong>Selected courses:</strong></p>
       <ul>
