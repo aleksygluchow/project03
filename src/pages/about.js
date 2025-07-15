@@ -18,7 +18,7 @@ export default function About() {
       <hr />
       <h2>Education</h2>
       <div style={{ position: 'relative', display: 'inline-block', marginBottom: '0.5rem' }}>
-  <p><strong>Jagiellonian University</strong> (2021 – exp. 2025)</p>
+  <p><strong>Jagiellonian University</strong> (2021 – 2025)</p>
   <div style={{
     position: 'absolute',
     top: '-10px',
