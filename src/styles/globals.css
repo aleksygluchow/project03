@@ -17,3 +17,34 @@ nav a {
 main {
   padding: 2rem;
 }
+
+
+
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-info .item {
+  display: inline;
+}
+
+.contact-info .separator {
+  display: inline;
+}
+
+@media (max-width: 769px) {
+  .contact-info .item {
+    display: block;
+    line-height: 1.4;
+  }
+
+  .contact-info .separator {
+    display: none;
+  }
+
+  .contact-info {
+    margin-bottom: 2rem; /* keep overall spacing but no extra space between lines */
+  }
+}
