@@ -13,7 +13,7 @@ export default function Home() {
 
       <div>
         <h1>Welcome to My Site</h1>
-        <p style={{ fontFamily: "'UnifrakturCook', cursive" }}>
+        <p style={{ fontFamily: "'UnifrakturCook', cursive", fontSize: '1.25rem' }}>
   Jetzt in Deutschland{' '}
   <a
     href="https://de.wikipedia.org/wiki/Deutschland"
