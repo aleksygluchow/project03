@@ -35,11 +35,6 @@ main {
 }
 
 @media (max-width: 769px) {
-
-main {
-  padding: 0.5rem;
-}
-
   .contact-info .item {
     display: block;
     line-height: 1.4;
