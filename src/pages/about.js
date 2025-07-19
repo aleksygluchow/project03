@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Image from 'next/image';
+
 
 
 export default function About() {
@@ -33,7 +35,17 @@ export default function About() {
 
 
       <h2>Education</h2>
-      <h3><strong>Jagiellonian University</strong> (2021 – 2025)</h3> 
+      <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+  <Image
+    src="/images/uj.svg"
+    alt="Jagiellonian University Logo"
+    width={24}
+    height={24}
+    style={{ display: 'inline-block' }}
+  />
+  <strong>Jagiellonian University</strong> (2021 – 2025)
+</h3>
+ 
       <p>Bachelor’s Degree, Physics</p>
       <h4><strong>Selected courses:</strong></h4>
       <ul>
