@@ -32,7 +32,7 @@ export default function About() {
 
 
       <h2>Education</h2>
-      <p><strong>Jagiellonian University</strong> (2021 – 2025)</p> 
+      <h3><strong>Jagiellonian University</strong> (2021 – 2025)</h3> 
       <p>Bachelor’s Degree, Physics</p>
       <p><strong>Selected courses:</strong></p>
       <ul>
