@@ -53,12 +53,14 @@ main {
   }
 
   .contact-info {
+    text-align: left;
     margin-bottom: 2rem; /* keep overall spacing but no extra space between lines */
+    padding-left: 1rem;
   }
 
   .cvbeginning { 
-  maxWidth: '900px'; 
-  margin: '0 auto'; 
-  padding: '0.2rem'; 
+  max-width: 900px;
+  margin: 0 auto; 
+  padding: 0.2rem; 
 }
 }
