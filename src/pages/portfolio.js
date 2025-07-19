@@ -18,8 +18,6 @@ export default function Portfolio() {
         <Image
           src="/images/no-projects.png"
           alt="Empty portfolio"
-          width={500}
-          height={350}
           style={{
             width: '100%',
             height: 'auto',
