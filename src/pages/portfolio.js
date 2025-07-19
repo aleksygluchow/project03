@@ -13,12 +13,16 @@ export default function Portfolio() {
 
         <div style={{ maxWidth: '500px', margin: '2rem auto' }}>
           <Image
-            src="/images/no-projects.png" // 👈 make sure this exists in /public/images/
-            alt="Empty portfolio"
-            width={500}
-            height={350}
-            style={{ width: '100%', height: 'auto' }}
-          />
+  src="/images/empty.png"
+  alt="Empty portfolio"
+  width={500}
+  height={350}
+  style={{
+    width: '100%',
+    height: 'auto',
+    filter: 'drop-shadow(0 0 2px black)', // 👈 looks like a border around actual image
+  }}
+/>
           <p style={{ marginTop: '1rem', fontStyle: 'italic', color: '#888' }}>
             no projects here yet
           </p>
