@@ -54,7 +54,7 @@ main {
 
   .contact-info {
     text-align: left;
-    margin-bottom: 2rem; /* keep overall spacing but no extra space between lines */
+    margin: 0 auto 2rem auto; /* keep overall spacing but no extra space between lines */
     padding-left: 1rem;
   }
 
