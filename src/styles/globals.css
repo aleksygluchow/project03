@@ -51,7 +51,7 @@ h3 {
   font-size: 1rem;
   line-height: 1.6;
   font-weight: normal;
-  color: pink;
+  color: #222; /* or #333 for softer dark */
 }
 
 h4 {
@@ -59,7 +59,7 @@ h4 {
   font-size: 1rem;
   line-height: 1.6;
   font-weight: normal;
-  color: blue;
+  color: #222; /* or #333 for softer dark */
 }
 
 h5, h6 {
