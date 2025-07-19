@@ -46,6 +46,14 @@ h3 {
   color: pink;
 }
 
+h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: normal;
+  color: blue;
+}
+
 body {
   margin: 0;
   padding: 0;
