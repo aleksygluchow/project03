@@ -40,8 +40,8 @@ export default function About() {
   <strong>Jagiellonian University</strong> <Image
     src="/images/uj.svg"
     alt="Jagiellonian University Logo"
-    width={24}
-    height={24}
+    width={18}
+    height={18}
     style={{ display: 'inline-block', verticalAlign: 'middle' }}
   /> (2021 – 2025)
 </h3>
