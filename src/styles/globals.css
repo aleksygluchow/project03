@@ -34,7 +34,7 @@ main {
 @media (max-width: 769px) {
 
   main {
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .contact-info .item {
@@ -47,6 +47,6 @@ main {
   }
 
   .contact-info {
-    margin-bottom: 1rem; /* keep overall spacing but no extra space between lines */
+    margin-bottom: 2rem; /* keep overall spacing but no extra space between lines */
   }
 }
