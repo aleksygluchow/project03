@@ -4,8 +4,6 @@ D:.
 |   .env.local
 |   .gitignore
 |   eslint.config.mjs
-|   frontend.rar
-|   frontend.zip
 |   jsconfig.json
 |   next.config.mjs
 |   package-lock.json
@@ -13,68 +11,9 @@ D:.
 |   README.md
 |   structure.txt
 |   
-+---.next
-|   \---cache
-|       |   .rscinfo
-|       |   
-|       +---eslint
-|       |       .cache_v6okrf
-|       |       
-|       +---swc
-|       |   \---plugins
-|       |       \---v7_windows_x86_64_9.0.0
-|       \---webpack
-|           +---client-development
-|           |       0.pack.gz
-|           |       1.pack.gz
-|           |       2.pack.gz
-|           |       3.pack.gz
-|           |       4.pack.gz
-|           |       5.pack.gz
-|           |       6.pack.gz
-|           |       7.pack.gz
-|           |       8.pack.gz
-|           |       index.pack.gz
-|           |       index.pack.gz.old
-|           |       
-|           +---client-development-fallback
-|           |       0.pack.gz
-|           |       index.pack.gz
-|           |       index.pack.gz.old
-|           |       
-|           +---client-production
-|           |       0.pack
-|           |       1.pack
-|           |       2.pack
-|           |       3.pack
-|           |       index.pack
-|           |       index.pack.old
-|           |       
-|           +---edge-server-production
-|           |       0.pack
-|           |       index.pack
-|           |       
-|           +---server-development
-|           |       0.pack.gz
-|           |       1.pack.gz
-|           |       2.pack.gz
-|           |       3.pack.gz
-|           |       4.pack.gz
-|           |       5.pack.gz
-|           |       6.pack.gz
-|           |       7.pack.gz
-|           |       index.pack.gz
-|           |       index.pack.gz.old
-|           |       
-|           \---server-production
-|                   0.pack
-|                   index.pack
-|                   index.pack.old
-|                   
 +---lib
 |       contentful.js
 |       
-+---node_modules
 |   |   .package-lock.json
 |   |   
 |   +---.bin
@@ -242,7 +181,6 @@ D:.
 |   |   |   |                   table.d.ts
 |   |   |   |                   ul.d.ts
 |   |   |   |                   
-|   |   |   \---node_modules
 |   |   |       \---@contentful
 |   |   |           \---rich-text-types
 |   |   |               |   LICENSE
@@ -584,7 +522,6 @@ D:.
 |   |   |   |   package.json
 |   |   |   |   README.md
 |   |   |   |   
-|   |   |   \---node_modules
 |   |   |       \---eslint-visitor-keys
 |   |   |           |   LICENSE
 |   |   |           |   package.json
@@ -639,7 +576,6 @@ D:.
 |   |       |       node-fsx.d.ts
 |   |       |       node-hfs.d.ts
 |   |       |       
-|   |       +---node_modules
 |   |       |   \---@humanwhocodes
 |   |       |       \---retry
 |   |       |           |   LICENSE
@@ -2476,7 +2412,6 @@ D:.
 |   |   |   |           unified-signatures.mdx
 |   |   |   |           use-unknown-in-catch-callback-variable.mdx
 |   |   |   |           
-|   |   |   \---node_modules
 |   |   |       \---ignore
 |   |   |               index.d.ts
 |   |   |               index.js
@@ -3273,7 +3208,6 @@ D:.
 |   |   |   |           ts-nodes.d.ts.map
 |   |   |   |           ts-nodes.js
 |   |   |   |           
-|   |   |   \---node_modules
 |   |   |       +---brace-expansion
 |   |   |       |   |   index.js
 |   |   |       |   |   LICENSE
@@ -5653,7 +5587,6 @@ D:.
 |   |   |           types.d.ts
 |   |   |           utils.d.ts
 |   |   |           
-|   |   \---node_modules
 |   |       \---fast-copy
 |   |           |   .release-it.beta.json
 |   |           |   .release-it.json
@@ -9287,7 +9220,6 @@ D:.
 |   |   |   package.json
 |   |   |   README.md
 |   |   |   
-|   |   \---node_modules
 |   |       \---debug
 |   |           |   CHANGELOG.md
 |   |           |   LICENSE
@@ -9349,7 +9281,6 @@ D:.
 |   |   |   visit.d.ts
 |   |   |   visit.js
 |   |   |   
-|   |   \---node_modules
 |   |       \---debug
 |   |           |   CHANGELOG.md
 |   |           |   LICENSE
@@ -9512,7 +9443,6 @@ D:.
 |   |   |       LICENSE
 |   |   |       README.md
 |   |   |       
-|   |   \---node_modules
 |   |       +---.bin
 |   |       |       semver
 |   |       |       semver.cmd
@@ -10216,7 +10146,6 @@ D:.
 |   |   |           version.d.ts.map
 |   |   |           version.js
 |   |   |           
-|   |   \---node_modules
 |   |       +---.bin
 |   |       |       resolve
 |   |       |       resolve.cmd
@@ -10418,7 +10347,6 @@ D:.
 |   |       |       |   |   |       package.json
 |   |       |       |   |   |       
 |   |       |       |   |   \---_
-|   |       |       |   |       +---node_modules
 |   |       |       |   |       |       foo.js
 |   |       |       |   |       |       
 |   |       |       |   |       \---symlink_target
@@ -10428,7 +10356,6 @@ D:.
 |   |       |       |           main.js
 |   |       |       |           
 |   |       |       \---shadowed_core
-|   |       |           \---node_modules
 |   |       |               \---util
 |   |       |                       index.js
 |   |       |                       
@@ -10589,7 +10516,6 @@ D:.
 |   |   |   package.json
 |   |   |   README.md
 |   |   |   
-|   |   +---node_modules
 |   |   |   \---glob-parent
 |   |   |           CHANGELOG.md
 |   |   |           index.js
@@ -22562,7 +22488,6 @@ D:.
 |   |       |   |   |       package.json
 |   |       |   |   |       
 |   |       |   |   \---_
-|   |       |   |       +---node_modules
 |   |       |   |       |       foo.js
 |   |       |   |       |       
 |   |       |   |       \---symlink_target
@@ -22572,7 +22497,6 @@ D:.
 |   |       |           main.js
 |   |       |           
 |   |       \---shadowed_core
-|   |           \---node_modules
 |   |               \---util
 |   |                       index.js
 |   |                       
@@ -23214,7 +23138,6 @@ D:.
 |   |   |       index.js
 |   |   |       index.mjs
 |   |   |       
-|   |   \---node_modules
 |   |       +---fdir
 |   |       |   |   LICENSE
 |   |       |   |   package.json

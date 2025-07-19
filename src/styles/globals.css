@@ -31,6 +31,12 @@ main {
   display: inline;
 }
 
+.cvbeginning { 
+  maxWidth: '900px', 
+  margin: '0 auto', 
+  padding: '2rem' 
+}
+
 @media (max-width: 769px) {
 
   main {
@@ -49,4 +55,10 @@ main {
   .contact-info {
     margin-bottom: 2rem; /* keep overall spacing but no extra space between lines */
   }
+
+  .cvbeginning { 
+  maxWidth: '900px', 
+  margin: '0 auto', 
+  padding: '0.2rem' 
+}
 }

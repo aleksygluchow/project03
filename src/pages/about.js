@@ -7,7 +7,7 @@ export default function About() {
       <Head>
         <title>CV</title>
       </Head>
-    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
+    <div class = 'cvbeginning'>
       <h1 style={{ textAlign: 'center' }}>Aliaksei Hlukhau</h1>
       <p style={{ textAlign: 'center' }}><em>(pronounced: Aleksy Głuchow)</em></p>
 
