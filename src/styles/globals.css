@@ -34,13 +34,11 @@ hr {
 }
 
 h3 {
-  all: unset;
-  display: block;
+  margin: 0 0 1rem 0;
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
-  color: pink;
   font-weight: normal;
+  color: pink;
 }
 
 body {
