@@ -36,14 +36,14 @@ export default function About() {
 
       <h2>Education</h2>
       <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-  <Image
+  
+  <strong>Jagiellonian University</strong> <Image
     src="/images/uj.svg"
     alt="Jagiellonian University Logo"
     width={24}
     height={24}
     style={{ display: 'inline-block', verticalAlign: 'middle' }}
-  />
-  <strong>Jagiellonian University</strong> (2021 – 2025)
+  /> (2021 – 2025)
 </h3>
  
       <p>Bachelor’s Degree, Physics</p>
