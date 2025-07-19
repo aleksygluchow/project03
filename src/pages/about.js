@@ -27,7 +27,7 @@ export default function About() {
 
       <hr />
 
-      <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0rem 2rem' }}>
+      <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0rem 2rem 2rem 2rem' }}>
 
 
 
