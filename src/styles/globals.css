@@ -34,7 +34,7 @@ main {
 @media (max-width: 769px) {
 
   main {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .contact-info .item {
