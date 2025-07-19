@@ -23,7 +23,14 @@ export default function About() {
   </span>
 </div>
 
+</div>
+
       <hr />
+
+    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
+
+
+
       <h2>Education</h2>
       <p><strong>Jagiellonian University</strong> (2021 – 2025)</p> 
       <p>Bachelor’s Degree, Physics</p>
