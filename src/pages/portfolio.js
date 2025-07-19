@@ -10,7 +10,7 @@ export default function Portfolio() {
 
       <div style={{
         maxWidth: '600px',
-        margin: '0 auto',
+        margin: 0,
         padding: '2rem 1rem',
         textAlign: 'center'
       }}>
