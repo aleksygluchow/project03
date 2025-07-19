@@ -8,25 +8,34 @@ export default function Portfolio() {
         <title>Portfolio</title>
       </Head>
 
-      <div style={{ textAlign: 'center', padding: '2rem' }}>
+      <div style={{
+        maxWidth: '600px',
+        margin: '0 auto',
+        padding: '2rem 1rem',
+        textAlign: 'center'
+      }}>
         <h1>Portfolio</h1>
 
-        <div style={{ maxWidth: '500px', margin: '2rem auto' }}>
-          <Image
-  src="/images/no-projects.png"
-  alt="Empty portfolio"
-  width={500}
-  height={350}
-  style={{
-    width: '100%',
-    height: 'auto',
-    filter: 'drop-shadow(0 0 2px black)', // 👈 looks like a border around actual image
-  }}
-/>
-          <p style={{ marginTop: '1rem', fontStyle: 'italic', color: '#888' }}>
-            no projects here yet
-          </p>
-        </div>
+        <Image
+          src="/images/no-projects.png"
+          alt="Empty portfolio"
+          width={500}
+          height={350}
+          style={{
+            width: '100%',
+            height: 'auto',
+            maxWidth: '100%',
+            filter: 'drop-shadow(0 0 3px rgba(0, 0, 0, 0.15))'
+          }}
+        />
+
+        <p style={{
+          marginTop: '1rem',
+          fontStyle: 'italic',
+          color: '#888'
+        }}>
+          no projects here yet
+        </p>
       </div>
     </>
   );
