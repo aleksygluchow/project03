@@ -7,7 +7,7 @@ body {
 nav {
   background: #222;
   color: white;
-  padding: 1rem;
+  padding: 1rem;  
 }
 nav a {
   margin-right: 1rem;
@@ -17,9 +17,6 @@ nav a {
 main {
   padding: 2rem;
 }
-
-
-
 
 .contact-info {
   text-align: center;
@@ -45,6 +42,6 @@ main {
   }
 
   .contact-info {
-    margin-bottom: 2rem; /* keep overall spacing but no extra space between lines */
+    margin-bottom: 0; /* keep overall spacing but no extra space between lines */
   }
 }
