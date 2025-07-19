@@ -55,19 +55,19 @@ export default function About() {
       <h2>Work Experience</h2>
 
 
-      <p><strong>Visiting Student Assistant</strong> (Supervisor: Prof. Dmitri Budker) (2025 July – August)</p>
+      <h3><strong>Visiting Student Assistant</strong> (Supervisor: Prof. Dmitri Budker) (2025 July – August)</h3>
       <p>Experimental research at the Helmholtz Institute Mainz, Johannes Gutenberg University Mainz, Faculty of Physics. Project: Zero- and ultra-low-field nuclear magnetic resonance, conducted in the Budker Group under the supervision of Prof. Dmitri Budker.</p>
 
-      <p><strong>Research Assistant (Volunteer)</strong> (2024 – present)</p>
+      <h3><strong>Research Assistant (Volunteer)</strong> (2024 – present)</h3>
       <p>Experimental research at the Photonics Department, Faculty of Physics. Project: Zero- and ultra-low-field nuclear magnetic resonance.</p>
 
-      <p><strong>Summer Internship at the Photonics Department</strong> (Supervisor: Prof. Szymon Pustelny) (July 2024)</p>
+      <h3><strong>Summer Internship at the Photonics Department</strong> (Supervisor: Prof. Szymon Pustelny) (July 2024)</h3>
       <ul>
         <li>Laboratory work on the GNOME project, focused on dark matter research</li>
         <li>Built and configured several spectroscopy systems on an optical table</li>
       </ul>
 
-      <p><strong>Additional Board Member, Student Physics Association (UJ)</strong> (2021/22, 2022/23)</p>
+      <h3><strong>Additional Board Member, Student Physics Association (UJ)</strong> (2021/22, 2022/23)</h3>
       <ul>
         <li>Helped organize events including the Winter School and SMOK Conference</li>
         <li>Participated in club management (supplies, documentation, etc.)</li>
