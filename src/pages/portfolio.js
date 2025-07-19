@@ -13,7 +13,7 @@ export default function Portfolio() {
 
         <div style={{ maxWidth: '500px', margin: '2rem auto' }}>
           <Image
-  src="/images/empty.png"
+  src="/images/no-projects.png"
   alt="Empty portfolio"
   width={500}
   height={350}
