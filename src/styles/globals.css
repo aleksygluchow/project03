@@ -91,7 +91,7 @@ main {
 .cvbeginning {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 @media (max-width: 769px) {
