@@ -41,7 +41,7 @@ export default function About() {
     alt="Jagiellonian University Logo"
     width={24}
     height={24}
-    style={{ display: 'inline-block' }}
+    style={{ display: 'inline-block', verticalAlign: 'middle' }}
   />
   <strong>Jagiellonian University</strong> (2021 – 2025)
 </h3>
