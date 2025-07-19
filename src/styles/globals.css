@@ -31,16 +31,16 @@ main {
   display: inline;
 }
 
-.cvbeginning { 
-  maxWidth: '900px'; 
-  margin: '0 auto'; 
-  padding: '2rem'; 
+.cvbeginning {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 @media (max-width: 769px) {
 
   main {
-    padding: 0.3rem;
+    padding: 0.25rem;
   }
 
   .contact-info .item {
