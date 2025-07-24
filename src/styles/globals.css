@@ -78,6 +78,12 @@ nav a {
   color: white;
   text-decoration: none;
 }
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
 main {
   padding: 2rem;
 }
