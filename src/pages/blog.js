@@ -45,7 +45,17 @@ export default function Blog({ posts }) {
   return (
   <>
       <Head>
-        <title>Blog</title>
+  <title>Blog</title>
+  <meta name="description" content="Aliaksei Hlukhau's webpage." />
+
+  {/* Open Graph (Telegram, Messenger) */}
+  <meta property="og:title" content="Blog" />
+  <meta property="og:description" content="Aliaksei Hlukhau – Physics student." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eigen.to" />
+  <meta property="og:image" content="/images/preview.png" /> {/* Optional image */}
+
+
       </Head>
     <div style={{ maxWidth: '700px', margin: '2rem auto', padding: '0 0.5rem' }}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>My Blog</h1>

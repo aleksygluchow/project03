@@ -8,8 +8,8 @@ export default function Home() {
   <meta name="description" content="Aliaksei Hlukhau's webpage." />
 
   {/* Open Graph (Telegram, Messenger) */}
-  <meta property="og:title" content="Aliaksei Hlukhau – Physics student" />
-  <meta property="og:description" content="Experimental physicist." />
+  <meta property="og:title" content="Home" />
+  <meta property="og:description" content="Aliaksei Hlukhau – Physics student." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.eigen.to" />
   <meta property="og:image" content="/images/preview.png" /> {/* Optional image */}
