@@ -25,17 +25,17 @@ export default function Home() {
 
 
       <div>
-        <h1>Welcome to My Site</h1>
+        <h1>Welcome to My Site!!</h1>
         <p style={{ fontFamily: "'UnifrakturCook', cursive", fontSize: '1.25rem' }}>
-  Jetzt in Deutschland{' '}
+  Jetzt in Polen{' '}
   <a
     href="https://de.wikipedia.org/wiki/Deutschland"
     target="_blank"
     rel="noopener noreferrer"
   >
     <img
-      src="https://flagcdn.com/w40/de.png"
-      alt="Deutsche Flagge"
+      src="https://flagcdn.com/w40/pl.png"
+      alt="Polnische Flagge"
       width="20"
       style={{ display: 'inline-block', verticalAlign: 'middle', marginLeft: '4px' }}
     />
