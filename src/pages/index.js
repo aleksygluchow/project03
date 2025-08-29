@@ -9,21 +9,27 @@ export default function Home() {
         <title>Home – Aliaksei Hlukhau</title>
         <meta name="description" content="Aliaksei Hlukhau's webpage." />
 
-        {/* Open Graph (Telegram, Messenger) */}
+        {/* Open Graph */}
         <meta property="og:title" content="Home" />
         <meta property="og:description" content="Aliaksei Hlukhau – Physics student." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.eigen.to" />
-        <meta property="og:image" content="/images/preview.png" /> {/* Optional image */}
+        <meta property="og:image" content="/images/preview.png" />
 
-        {/* Font you already use */}
         <link
           href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap"
           rel="stylesheet"
         />
       </Head>
 
-      <Layout>
+      {/* If you can: make Layout accept showTopNav={false} and use it here */}
+      <Layout /* showTopNav={false} */>
+        {/* Hide Layout's built-in top nav with CSS if you can't change Layout yet */}
+        <style jsx global>{`
+          /* Try common classnames; harmless if not present */
+          .site-header, .topnav, nav.site-nav, header[data-role='topnav'] { display: none !important; }
+        `}</style>
+
         <div className="retro-wrap">
           <table className="outer" cellPadding="0" cellSpacing="0">
             <tbody>
@@ -32,19 +38,13 @@ export default function Home() {
                   <div className="sidebar-inner">
                     <h3 className="nav-title">~ NAVIGATION ~</h3>
                     <ul className="nav">
-                      <li>
-                        <Link href="/">Home</Link>
-                      </li>
-                      <li>
-                        <Link href="/about">About</Link>
-                      </li>
-                      <li>
-                        <Link href="/blog">Blog</Link>
-                      </li>
-                      <li>
-                        <a href="mailto:me@eigen.to">Contact</a>
-                      </li>
+                      <li><Link href="/">Home</Link></li>
+                      <li><Link href="/about">About</Link></li>
+                      <li><Link href="/portfolio">Portfolio</Link></li>
+                      <li><Link href="/blog">Blog</Link></li>
+                      <li><a href="mailto:me@eigen.to">Contact</a></li>
                     </ul>
+
                     <div className="badges">
                       <span className="badge">Under Construction</span>
                       <span className="badge">Best viewed at 1024×768</span>
@@ -60,7 +60,7 @@ export default function Home() {
                     </div>
                   </header>
 
-                  <div className="marquee">
+                  <div className="marquee" aria-hidden="true">
                     <div className="marquee-inner">
                       ✨ I’m back in Kraków and starting my Master’s this October! ✨
                     </div>
@@ -95,12 +95,8 @@ export default function Home() {
                     </p>
 
                     <div className="buttons">
-                      <a className="btn" href="/Aliaksei-CV.pdf">
-                        Download my CV
-                      </a>
-                      <Link className="btn" href="/blog">
-                        Enter the Blog
-                      </Link>
+                      <a className="btn" href="/Aliaksei-CV.pdf">Download my CV</a>
+                      <Link className="btn" href="/blog">Enter the Blog</Link>
                     </div>
 
                     <div className="counter">
@@ -118,7 +114,6 @@ export default function Home() {
           </table>
         </div>
 
-        {/* Scoped retro CSS */}
         <style jsx>{`
           .retro-wrap {
             min-height: 60vh;
@@ -132,7 +127,8 @@ export default function Home() {
           }
 
           .outer {
-            width: 980px;
+            width: 100%;
+            max-width: 980px;
             margin: 0 auto;
             border: 4px ridge #39f;
             background: rgba(0,0,0,0.65);
@@ -205,7 +201,7 @@ export default function Home() {
           .buttons { margin: 14px 0; display: flex; gap: 10px; flex-wrap: wrap; }
           .btn {
             display: inline-block;
-            padding: 6px 10px;
+            padding: 10px 14px;
             border: 3px outset #39f;
             background: linear-gradient(#0af, #07c);
             color: #fff;
@@ -231,6 +227,23 @@ export default function Home() {
             text-align: center;
             font-size: 12px;
             color: #ddd;
+          }
+
+          /* -------- Mobile tweaks -------- */
+          @media (max-width: 720px) {
+            /* Collapse the table layout into blocks */
+            .outer, .outer tbody, .outer tr, .outer td { display: block; width: 100% !important; }
+            .sidebar { border-right: 0; }
+            .sidebar-inner { padding: 10px; }
+            .nav { list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 12px; }
+            .nav li { margin: 0; }
+            .badge { display: none; } /* cut visual noise on phones */
+            .site-title { font-size: 26px; }
+            .subtitle { font-size: 11px; }
+            .buttons { flex-direction: column; }
+            .btn { width: 100%; text-align: center; }
+            .marquee-inner { animation-duration: 20s; } /* slower scroll on mobile */
+            .intro { padding: 12px; }
           }
         `}</style>
 
