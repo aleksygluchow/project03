@@ -29,7 +29,7 @@ export default function Home() {
         <p style={{ fontFamily: "'UnifrakturCook', cursive", fontSize: '1.25rem' }}>
   Jetzt in Polen{' '}
   <a
-    href="https://de.wikipedia.org/wiki/Deutschland"
+    href="https://de.wikipedia.org/wiki/Polen"
     target="_blank"
     rel="noopener noreferrer"
   >
