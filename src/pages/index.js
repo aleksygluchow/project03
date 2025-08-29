@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 export default function Home() {
@@ -22,7 +23,6 @@ export default function Home() {
         />
       </Head>
 
-      {/* Use your existing Layout wrapper */}
       <Layout>
         <div className="retro-wrap">
           <table className="outer" cellPadding="0" cellSpacing="0">
@@ -32,10 +32,18 @@ export default function Home() {
                   <div className="sidebar-inner">
                     <h3 className="nav-title">~ NAVIGATION ~</h3>
                     <ul className="nav">
-                      <li><a href="/">Home</a></li>
-                      <li><a href="/about">About</a></li>
-                      <li><a href="/blog">Blog</a></li>
-                      <li><a href="mailto:me@eigen.to">Contact</a></li>
+                      <li>
+                        <Link href="/">Home</Link>
+                      </li>
+                      <li>
+                        <Link href="/about">About</Link>
+                      </li>
+                      <li>
+                        <Link href="/blog">Blog</Link>
+                      </li>
+                      <li>
+                        <a href="mailto:me@eigen.to">Contact</a>
+                      </li>
                     </ul>
                     <div className="badges">
                       <span className="badge">Under Construction</span>
@@ -87,8 +95,12 @@ export default function Home() {
                     </p>
 
                     <div className="buttons">
-                      <a className="btn" href="/Aliaksei-CV.pdf">Download my CV</a>
-                      <a className="btn" href="/blog">Enter the Blog</a>
+                      <a className="btn" href="/Aliaksei-CV.pdf">
+                        Download my CV
+                      </a>
+                      <Link className="btn" href="/blog">
+                        Enter the Blog
+                      </Link>
                     </div>
 
                     <div className="counter">
@@ -106,7 +118,7 @@ export default function Home() {
           </table>
         </div>
 
-        {/* Scoped styles so it doesn't fight your global CSS */}
+        {/* Scoped retro CSS */}
         <style jsx>{`
           .retro-wrap {
             min-height: 60vh;
@@ -222,7 +234,7 @@ export default function Home() {
           }
         `}</style>
 
-        {/* Tiny local hit counter (doesn't require any backend) */}
+        {/* Tiny local hit counter */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
