@@ -317,8 +317,11 @@ export default function Home() {
       {/* <Layout> */}
       <div style={{ padding: '16px', maxWidth: 1100, margin: '0 auto' }}>
         <h1>Welcome to My Site!</h1>
-        <p style={{ fontFamily: "'UnifrakturCook', cursive", fontSize: '1.25rem' }}>
-          Jetzt in Polen{' '}
+        <p style={{ fontFamily: "'Antykwa Poltawskiego', 'Times New Roman'", fontSize: '1.25rem' }}>
+          Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. <br />
+          Ile cię trzeba cenić, ten tylko się dowie, <br />
+          Kto cię stracił. Dziś piękność twą w całej ozdobie <br />
+          Widzę i opisuję, bo tęsknię po tobie.{' '}
           <a href="https://de.wikipedia.org/wiki/Polen" target="_blank" rel="noopener noreferrer">
             <img
               src="https://flagcdn.com/w40/pl.png"
