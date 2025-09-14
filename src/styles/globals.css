@@ -326,3 +326,9 @@ main {
     padding: 0.2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .portfolio-image {
+    max-height: 220px;  /* smaller on phones */
+  }
+}

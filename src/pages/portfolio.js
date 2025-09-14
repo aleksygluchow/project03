@@ -23,24 +23,28 @@ export default function Portfolio() {
         <h1 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Portfolio</h1>
 
         <div style={{
-          position: 'relative',
-          width: '100%',
-          maxWidth: '600px',
-          margin: '0 auto'
-        }}>
-          <Image
-            src="/images/siemiradzki.jpg"   // ⬅️ place your uploaded file in public/images
-            alt="Siemiradzki Curtain, Słowacki Theatre"
-            width={600}
-            height={400}
-            style={{
-              objectFit: 'contain',
-              borderRadius: '8px',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
-            }}
-            priority
-          />
-        </div>
+  position: 'relative',
+  width: '100%',
+  maxWidth: '500px',   // ✅ don’t let it get huge
+  margin: '0 auto'
+}}>
+  <Image
+    src="/images/siemiradzki.jpg"
+    alt="Siemiradzki Curtain, Słowacki Theatre"
+    width={600}
+    height={400}
+    style={{
+      objectFit: 'contain',
+      borderRadius: '8px',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+      maxHeight: '300px',    // ✅ cap height
+      width: '100%',
+      height: 'auto'
+    }}
+    priority
+  />
+</div>
+
 
         <h2 style={{
           marginTop: '1.5rem',
