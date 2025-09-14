@@ -29,7 +29,7 @@ export default function Portfolio() {
           margin: '0 auto'
         }}>
           <Image
-            src="/images/siemiradzki.jpeg"   // ⬅️ place your uploaded file in public/images
+            src="/images/siemiradzki.jpg"   // ⬅️ place your uploaded file in public/images
             alt="Siemiradzki Curtain, Słowacki Theatre"
             width={600}
             height={400}
