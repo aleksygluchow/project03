@@ -25,16 +25,14 @@ export default function Portfolio() {
       }}>
         <h1>Portfolio</h1>
 
-        <Image
-          src="/images/no-projects.png"
-          alt="Empty portfolio"
-          style={{
-            width: '100%',
-            height: 'auto',
-            maxWidth: '100%',
-            filter: 'drop-shadow(0 0 3px rgba(0, 0, 0, 0.15))'
-          }}
-        />
+        <div className="image-wrapper">
+  <Image
+    src="/images/no-projects.png"
+    alt="Empty portfolio"
+    fill
+    className="responsive-img"
+  />
+</div>
 
         <p style={{
           marginTop: '1rem',

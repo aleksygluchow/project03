@@ -145,6 +145,172 @@ main {
 
 
 
+/* ===== Laser Card ===== */
+.laser-card{
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 28px 24px;
+  background: radial-gradient(120% 100% at 50% 0%,
+              #0d1422 0%, #0a0f1c 55%, #070b14 100%);
+  border: 1.5px solid rgba(48,213,200,.35);       /* turkus jak u Ciebie */
+  box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
+  isolation: isolate; /* poprawne mieszanie warstw */
+}
+
+/* Siatka „optical table” */
+.laser-card::before{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    linear-gradient(transparent 31px, rgba(48,213,200,.08) 32px) 0 0/32px 32px,
+    linear-gradient(90deg, transparent 31px, rgba(48,213,200,.08) 32px) 0 0/32px 32px;
+  filter: drop-shadow(0 0 2px rgba(48,213,200,.15));
+  mix-blend-mode: screen;
+  opacity:.8;
+  animation: grid-pan 14s linear infinite;
+}
+
+/* Delikatne pasma interferencyjne (sinus-look bez JS) */
+.laser-card::after{
+  content:"";
+  position:absolute; inset:-40% -20%;
+  background:
+    radial-gradient(120% 35% at 50% 50%, rgba(255,255,255,.08), transparent 60%) top/100% 60% no-repeat,
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,.0) 0px,
+      rgba(255,255,255,.22) 1px,
+      rgba(255,255,255,.0) 3px,
+      rgba(255,255,255,.0) 9px
+    );
+  opacity:.12;
+  transform: rotate(8deg);
+  animation: frings 9s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
+
+/* Skanująca wiązka (beam) – w osobnej warstwie dla fajnego glow */
+.laser-inner::before{
+  content:"";
+  position:absolute; left:-20%; top:-30%;
+  width:140%; height:60%;
+  background:
+    radial-gradient(35% 140% at 50% 50%, rgba(48,213,200,.55), rgba(48,213,200,0) 70%),
+    linear-gradient( to right, rgba(48,213,200,.0), rgba(48,213,200,.35), rgba(48,213,200,.0) );
+  filter: blur(6px);
+  transform-origin: 50% 120%;
+  animation: sweep 5.6s cubic-bezier(.55,.15,.2,.95) infinite;
+  pointer-events:none;
+}
+
+/* Subtelny „laser noise” – mikroziarno daje „fotoniczny” vibe */
+.laser-inner{
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(2px) saturate(110%);
+  -webkit-backdrop-filter: blur(2px) saturate(110%);
+}
+
+.laser-title{
+  margin: 0 0 6px 0;
+  font-family: 'UnifrakturCook', system-ui, serif; /* nagłówek w Twoim gotyku */
+  font-size: clamp(22px, 3.2vw, 34px);
+  letter-spacing: .5px;
+  color: #dff7f4;
+  text-shadow:
+    0 0 12px rgba(48,213,200,.35),
+    0 0 2px rgba(48,213,200,.6);
+}
+
+.laser-sub{
+  margin: 0;
+  font-family: 'Antykwa Poltawskiego', serif;
+  font-size: clamp(13px, 1.4vw, 16px);
+  color: #bcd7d3;
+  opacity:.9;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px; /* you control the height for responsiveness */
+}
+
+.responsive-img {
+  object-fit: contain; /* or cover if you want it cropped */
+}
+
+.cover-image {
+  position: relative;
+  width: 100%;
+  height: 250px;  /* adjust this for aspect ratio */
+  margin-bottom: 1rem;
+}
+
+.cover-img {
+  border-radius: 8px;
+  object-fit: cover;  /* crop nicely */
+}
+
+.cover-image {
+  position: relative;
+  width: 100%;
+  height: 250px; /* adjust as you like */
+}
+
+.cover-img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blog-content img {
+  max-height: 500px;   /* or whatever feels right */
+  width: auto;
+  object-fit: contain;
+}
+
+.inline-image {
+  max-height: 400px;   /* ⬅️ adjust this to taste */
+  overflow: hidden;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.inline-image img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+
+
+/* Animacje */
+@keyframes grid-pan{
+  0%{ transform: translate3d(0,0,0) }
+  100%{ transform: translate3d(-32px,-32px,0) }
+}
+@keyframes sweep{
+  0%  { transform: rotate(-8deg) translateY(0);   opacity:.55 }
+  50% { transform: rotate( 8deg) translateY(4%);  opacity:.75 }
+  100%{ transform: rotate(-8deg) translateY(0);   opacity:.55 }
+}
+@keyframes frings{
+  0%,100%{ transform: rotate(8deg) scale(1);   opacity:.12 }
+  50%    { transform: rotate(6deg) scale(1.03); opacity:.18 }
+}
+
+/* Responsive spacing to match Twoje karty */
+@media (min-width: 640px){
+  .laser-card{ padding: 32px 28px; }
+}
+
+
+
+
 
 
 @media (max-width: 769px) {

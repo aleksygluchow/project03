@@ -345,6 +345,16 @@ export default function Home() {
             }}
           />
         </section>
+
+
+{/*
+        <section class="laser-card">
+  <div class="laser-inner">
+    <h2 class="laser-title">Optics & Photonics</h2>
+    <p class="laser-sub">coherent light • interference • diffraction</p>
+  </div>
+</section>
+        */}
       </div>
       {/* </Layout> */}
     </>
