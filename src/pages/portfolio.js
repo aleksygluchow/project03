@@ -31,6 +31,7 @@ export default function Portfolio() {
     alt="Empty portfolio"
     fill
     className="responsive-img"
+    priority
   />
 </div>
 

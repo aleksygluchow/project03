@@ -140,6 +140,18 @@ main {
   display: inline;
 }
 
+.image-wrapper {
+  position: relative;   /* required for fill */
+  width: 100%;
+  max-width: 400px;     /* prevent huge scaling */
+  height: 250px;        /* control height */
+  margin: 0 auto;       /* center it */
+}
+.responsive-img {
+  object-fit: contain;  /* don’t crop */
+  pointer-events: none; /* stops blocking nav clicks */
+}
+
 /* ================= Laser Card ================= */
 .laser-card {
   position: relative;
