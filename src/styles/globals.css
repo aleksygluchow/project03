@@ -249,8 +249,9 @@ main {
 .blog-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;              /* tighter spacing */
   justify-content: center;
+  align-items: flex-start;  /* align tops evenly */
 }
 
 .blog-content img {
@@ -262,14 +263,27 @@ main {
   display: block;
 }
 
+.blog-image {
+  text-align: center;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 .blog-image.landscape {
   flex: 1 1 100%;
   max-width: 100%;
 }
 
 .blog-image.portrait {
-  flex: 1 1 45%;
-  max-width: 45%;
+  flex: 1 1 48%;   /* force 2 columns */
+  max-width: 48%;
 }
 
 @media (max-width: 768px) {
@@ -333,5 +347,13 @@ main {
 @media (max-width: 768px) {
   .portfolio-image {
     max-height: 220px;  /* smaller on phones */
+  }
+}
+
+/* Extra tweak for very small phones */
+@media (max-width: 480px) {
+  .blog-image.portrait {
+    flex: 1 1 100%;   /* stack only on *tiny* screens */
+    max-width: 100%;
   }
 }
