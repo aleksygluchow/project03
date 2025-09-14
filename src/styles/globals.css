@@ -254,10 +254,12 @@ main {
 }
 
 .blog-content img {
-  width: 100%;
+  max-width: 90%;      /* don’t let it overflow */
   height: auto;
   border-radius: 8px;
   object-fit: contain;
+  margin: 0 auto;       /* center */
+  display: block;
 }
 
 .blog-image.landscape {
@@ -272,10 +274,11 @@ main {
 
 @media (max-width: 768px) {
   .blog-image.portrait {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 48%;   /* allow 2 side by side */
+    max-width: 48%;
   }
 }
+
 
 /* ================= Animations ================= */
 @keyframes grid-pan {
