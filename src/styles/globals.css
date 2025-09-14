@@ -282,8 +282,9 @@ main {
 }
 
 .blog-image.portrait {
-  flex: 1 1 48%;   /* force 2 columns */
+  flex: 1 1 48%;    /* allow 2 per row */
   max-width: 48%;
+  min-width: 160px; /* <– prevents collapsing to full width */
 }
 
 @media (max-width: 768px) {
@@ -353,7 +354,8 @@ main {
 /* Extra tweak for very small phones */
 @media (max-width: 480px) {
   .blog-image.portrait {
-    flex: 1 1 100%;   /* stack only on *tiny* screens */
+    flex: 1 1 100%;
     max-width: 100%;
+    min-width: auto;
   }
 }

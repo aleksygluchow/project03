@@ -56,6 +56,7 @@ const renderOptions = {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       const { url, details, fileName } = node.data.target.fields.file;
       const description = node.data.target.fields.description || fileName;
+
       const src = `https:${url}`;
       const thumb = `${src}?w=700&fm=webp&q=80`;
 
@@ -66,7 +67,14 @@ const renderOptions = {
           <img
             src={thumb}
             alt={description}
-            style={{ width: "100%", height: "auto", borderRadius: "8px", cursor: "pointer" }}
+            style={{
+              width: "100%",
+              height: "auto",
+              maxHeight: isPortrait ? "350px" : "500px", // ✅ keep proportions sensible
+              borderRadius: "8px",
+              cursor: "pointer",
+              objectFit: "contain"
+            }}
             onClick={() => {
               setLightboxImage(src);
               setLightboxOpen(true);
@@ -77,6 +85,7 @@ const renderOptions = {
     },
   },
 };
+
 
 
   return (
