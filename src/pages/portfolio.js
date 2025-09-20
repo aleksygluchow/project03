@@ -15,9 +15,11 @@ export default function Portfolio() {
       </Head>
 
       <Image
-    src="/images/01-23.png"
-    
-    
-  />
+        src="/images/01-23.png"
+        alt="01-23"
+        width={800}
+        height={600}
+      />
+    </>
   )
 }
