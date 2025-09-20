@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Portfolio() {
   return (
@@ -14,12 +13,18 @@ export default function Portfolio() {
         <meta property="og:image" content="/images/preview.png" />
       </Head>
 
-      <Image
-        src="/images/01-23.png"
-        alt="01-23"
-        width={800}
-        height={600}
-      />
+      <div style={{
+        maxWidth: '1000px',
+        margin: '0 auto',
+        padding: '3rem 1rem',
+        textAlign: 'center'
+      }}>
+        <img 
+          src="/images/01-23.png" 
+          alt="Zadania 1-23" 
+          style={{ display: 'block', margin: '0 auto' }}
+        />
+      </div>
     </>
   )
 }
