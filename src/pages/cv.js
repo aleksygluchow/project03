@@ -23,6 +23,19 @@ export default function CV() {
           <em>(pronounced: Aleksy Głuchow)</em>
         </p>
 
+
+        <div style={styles.cvBtnWrap}>
+  <a
+    href="/cv/CV-ENG.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={styles.cvBtn}
+  >
+    ↓  Download CV (ENG)
+  </a>
+</div>
+
+
         <div className="contact-info">
           <span className="item">Phone: (+48) 728 035 080</span>
           <span className="separator"> | </span>
@@ -243,3 +256,26 @@ export default function CV() {
     </>
   );
 }
+
+
+
+const styles = {
+  cvBtnWrap: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '12px',
+    marginBottom: '14px',
+  },
+  cvBtn: {
+    display: 'inline-block',
+    padding: '12px 18px',
+    borderRadius: 12,
+    background: '#111',
+    color: '#fff',
+    textDecoration: 'none',
+    fontWeight: 700,
+    boxShadow: '0 8px 20px rgba(0,0,0,.12)',
+    border: '1px solid #111',
+    transition: 'transform .06s ease, background .15s ease, box-shadow .15s ease',
+  },
+};
