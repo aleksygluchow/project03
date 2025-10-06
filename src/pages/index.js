@@ -13,7 +13,6 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.eigen.to" />
         <meta property="og:image" content="/images/preview.png" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
       </Head>
 
       <main style={styles.page} role="main">
