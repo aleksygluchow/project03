@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 const links = [
   { href: '/', label: 'Home' },
-  { href: '/CV', label: 'CV' },
+  { href: '/cv', label: 'CV' },
   { href: '/portfolio', label: 'Portfolio' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
