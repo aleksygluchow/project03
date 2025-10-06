@@ -126,7 +126,7 @@ main {
 
 .cvbeginning h1 {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   line-height: 1.2;
 }
 
