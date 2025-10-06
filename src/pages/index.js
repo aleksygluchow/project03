@@ -69,7 +69,6 @@ const styles = {
   h1: {
     margin: 0,          // kill global h1 margins
     fontSize: 'clamp(28px, 6vw, 48px)',
-    fontWeight: 800,
     letterSpacing: '-0.02em',
   },
   subline: {
