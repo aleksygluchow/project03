@@ -35,7 +35,7 @@ export default function Home() {
 
           <div style={styles.ctaRow}>
             <a
-              href="/cv/Aliaksei_Hlukhau_CV.pdf"
+              href="/cv"
               target="_blank"
               rel="noopener noreferrer"
               style={{ ...styles.btn, ...styles.btnPrimary }}
