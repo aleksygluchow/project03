@@ -18,7 +18,7 @@ export default function Home() {
         <section style={styles.wrap} aria-label="Intro">
           <div style={styles.photoWrap}>
             <img
-              src="/images/profile.jpg"
+              src="/images/IMG_2356-1.JPG"
               alt="Aliaksei Hlukhau"
               style={styles.photo}
               width={320}
