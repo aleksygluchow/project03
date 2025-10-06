@@ -50,55 +50,59 @@ export default function Home() {
 
 const styles = {
   page: {
-    minHeight: '100vh',
+    height: '100svh', // use small viewport units to avoid mobile browser chrome issues
+    width: '100%',
     display: 'grid',
     placeItems: 'center',
     background: '#fafafa',
     color: '#111',
     fontFamily:
       "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'",
-    padding: 24,
+    padding: 0,           // override global main { padding }
+    overflow: 'hidden',   // prevent scrollbars
   },
   wrap: {
     width: '100%',
     maxWidth: 720,
     textAlign: 'center',
+    display: 'grid',
+    justifyItems: 'center',
+    gap: 12,
+    padding: '0 16px',
   },
   photoWrap: {
     display: 'inline-block',
-    marginBottom: 18,
   },
   photo: {
     display: 'block',
-    width: 'min(320px, 72vw)',
+    width: 'min(320px, 70vw)',
     height: 'auto',
-    borderRadius: 12, // slightly rounded corners
-    boxShadow: '0 8px 24px rgba(0,0,0,0.15)', // soft shadow
+    maxHeight: '46vh',    // keep photo from forcing scroll
+    borderRadius: 12,
+    boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
     border: '1px solid #e6e6e6',
     objectFit: 'cover',
   },
   h1: {
-    marginTop: 12,
-    marginBottom: 6,
-    fontSize: 'clamp(28px, 6vw, 44px)',
+    margin: 0,
+    fontSize: 'clamp(24px, 6vw, 40px)',
     fontWeight: 800,
     letterSpacing: -0.2,
   },
   sub: {
     margin: 0,
     opacity: 0.7,
-    fontSize: 'clamp(14px, 2.2vw, 18px)',
+    fontSize: 'clamp(13px, 2.2vw, 17px)',
   },
   ctaRow: {
     display: 'flex',
     justifyContent: 'center',
-    gap: 12,
-    marginTop: 18,
+    gap: 10,
     flexWrap: 'wrap',
   },
   btn: {
     display: 'inline-block',
-    padding: '10px 16px',
+    padding: '9px 14px',
     borderRadius: 10,
     textDecoration: 'none',
     fontWeight: 700,
