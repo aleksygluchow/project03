@@ -24,9 +24,6 @@ export default function Home() {
 
         <div className="cvbeginning">
         <h1 style={{ textAlign: 'center' }}>Aliaksei Hlukhau</h1>
-        <p style={{ textAlign: 'center' }}>
-          <em>(pronounced: Aleksy Głuchow)</em>
-        </p>
 
         <div className="contact-info">
           Physics Student
