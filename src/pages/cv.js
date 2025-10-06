@@ -31,7 +31,7 @@ export default function CV() {
     rel="noopener noreferrer"
     className="btn-soft"
   >
-    ↓  Download CV (ENG)
+    Download CV (ENG)
   </a>
 </div>
 
