@@ -17,14 +17,18 @@ export default function Home() {
       <main style={styles.page}>
         <section style={styles.wrap} aria-label="Intro">
           <div style={styles.photoWrap}>
-            <img
-              src="/images/IMG_2356-1.JPG"
+            <Image
+              src="/images/IMG_2356-1.JPG"      // ensure exact filename/case on disk
               alt="Aliaksei Hlukhau"
+              width={640}                     // 2× the displayed width (retina-crisp)
+              height={800}
+              sizes="320px"                   // we display ~320px, let Next serve 1x/2x correctly
+              quality={95}
+              priority                        // preload hero
               style={styles.photo}
-              width={320}
-              height={400}
             />
           </div>
+
 
           <h1 style={styles.h1}>Aliaksei Hlukhau</h1>
           <p style={styles.sub}>Physics MSc · Photonics & ZULF NMR</p>
