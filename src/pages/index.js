@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -30,9 +31,9 @@ export default function Home() {
             <a href="/cv/Aliaksei_Hlukhau_CV.pdf" target="_blank" rel="noopener noreferrer" style={{ ...styles.btn, ...styles.btnPrimary }}>
               View CV
             </a>
-            <a href="/contact" style={{ ...styles.btn, ...styles.btnGhost }}>
+            <Link href="/contact" style={{ ...styles.btn, ...styles.btnGhost }}>
               Contact
-            </a>
+            </Link>
           </div>
         </section>
 
