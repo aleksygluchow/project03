@@ -4,134 +4,110 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home – Aliaksei Hlukhau</title>
-        <meta name="description" content="Aliaksei Hlukhau – physics MSc student focused on photonics & ZULF NMR." />
-        {/* Open Graph */}
+        <title>Aliaksei Hlukhau</title>
+        <meta name="description" content="Aliaksei Hlukhau – Physics MSc student (Photonics & ZULF NMR)." />
         <meta property="og:title" content="Aliaksei Hlukhau" />
         <meta property="og:description" content="Physics MSc student — Photonics & ZULF NMR." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.eigen.to" />
         <meta property="og:image" content="/images/preview.png" />
-        {/* Fonts (optional) */}
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
       </Head>
 
-      <main style={styles.wrap}>
-        <section style={styles.card} aria-label="Intro">
+      <main style={styles.page}>
+        <section style={styles.section} aria-label="Intro">
           <img
             src="/images/profile.jpg"
             alt="Portrait of Aliaksei Hlukhau"
-            width={160}
-            height={160}
+            width={144}
+            height={144}
             style={styles.avatar}
           />
 
-          <h1 style={styles.title}>Aliaksei Hlukhau</h1>
-          <p style={styles.subtitle}>Physics MSc student · Photonics & ZULF NMR · Kraków → Mainz</p>
-
-          <p style={styles.blurb}>
-            I build things at the intersection of optics, ultra‑low‑field NMR, and modern web. Currently pursuing a
-            master’s in Experimental Physics and documenting projects at <strong>eigen.to</strong>.
-          </p>
+          <h1 style={styles.h1}>Aliaksei Hlukhau</h1>
+          <p style={styles.tagline}>Physics MSc · Photonics & ZULF NMR</p>
 
           <div style={styles.ctaRow}>
             <a href="/cv/Aliaksei_Hlukhau_CV.pdf" target="_blank" rel="noopener noreferrer" style={{ ...styles.btn, ...styles.btnPrimary }}>
               View CV
             </a>
-            <a href="mailto:aliaksei.hlukhau@gmail.com" style={{ ...styles.btn, ...styles.btnGhost }}>
+            <a href="/contact" style={{ ...styles.btn, ...styles.btnGhost }}>
               Contact
             </a>
           </div>
         </section>
 
-        <footer style={styles.footer}>
-          <span>© {new Date().getFullYear()} Aliaksei Hlukhau</span>
-        </footer>
+        <footer style={styles.footer}>© {new Date().getFullYear()} Aliaksei Hlukhau</footer>
       </main>
     </>
   );
 }
 
 const styles = {
-  wrap: {
+  page: {
     minHeight: '100vh',
     display: 'flex',
-    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '24px',
-    gap: 24,
-    background: 'radial-gradient(1000px 600px at 50% 15%, #0e1322, #0b0f1a)',
-    fontFamily: "Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif",
-    color: '#e5e7eb',
+    background: '#fff',
+    color: '#111',
+    fontFamily:
+      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'",
+    padding: 24,
   },
-  card: {
+  section: {
     width: '100%',
-    maxWidth: 820,
-    background: 'rgba(2,6,23,0.55)',
-    border: '1px solid rgba(148,163,184,0.25)',
-    borderRadius: 20,
-    boxShadow: '0 20px 60px rgba(0,0,0,0.45)',
-    padding: '32px clamp(20px, 6vw, 48px)',
-    backdropFilter: 'blur(10px)',
-    WebkitBackdropFilter: 'blur(10px)',
+    maxWidth: 560,
     textAlign: 'center',
   },
   avatar: {
     borderRadius: '50%',
     objectFit: 'cover',
     display: 'block',
-    margin: '0 auto 14px',
-    boxShadow: '0 10px 30px rgba(0,0,0,0.35)',
-    border: '2px solid rgba(255,255,255,0.55)'
+    margin: '0 auto 16px',
+    border: '1px solid #ddd',
   },
-  title: {
-    margin: '8px 0 6px',
-    fontSize: 'clamp(28px, 5vw, 42px)',
-    fontWeight: 800,
-    letterSpacing: 0.4,
-  },
-  subtitle: {
+  h1: {
     margin: 0,
-    opacity: 0.85,
-    fontWeight: 600,
+    fontSize: 'clamp(32px, 6vw, 56px)',
+    fontWeight: 800,
+    letterSpacing: -0.5,
   },
-  blurb: {
-    maxWidth: 680,
-    margin: '18px auto 0',
-    lineHeight: 1.6,
-    opacity: 0.95,
+  tagline: {
+    marginTop: 8,
+    opacity: 0.7,
+    fontSize: 'clamp(15px, 2.4vw, 18px)',
   },
   ctaRow: {
     display: 'flex',
     gap: 12,
     justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 22,
+    marginTop: 20,
     flexWrap: 'wrap',
   },
   btn: {
     display: 'inline-block',
-    padding: '10px 16px',
-    borderRadius: 999,
+    padding: '12px 18px',
+    borderRadius: 10,
     textDecoration: 'none',
     fontWeight: 700,
-    border: '1px solid rgba(148,163,184,0.35)',
-    transition: 'transform .12s ease, box-shadow .2s ease, background .2s ease',
+    border: '1px solid #111',
+    transition: 'background .15s ease, color .15s ease, transform .06s ease',
   },
   btnPrimary: {
-    background: 'linear-gradient(180deg, #22d3ee, #06b6d4)',
-    color: '#0a0f1f',
-    border: 'none',
-    boxShadow: '0 10px 30px rgba(34,211,238,0.35)',
+    background: '#111',
+    color: '#fff',
   },
   btnGhost: {
-    background: 'rgba(2,6,23,0.35)',
-    color: '#e5e7eb',
+    background: '#fff',
+    color: '#111',
   },
   footer: {
-    marginTop: 24,
-    opacity: 0.6,
-    fontSize: 14,
+    position: 'fixed',
+    left: 0,
+    right: 0,
+    bottom: 12,
+    textAlign: 'center',
+    fontSize: 13,
+    opacity: 0.5,
   },
 };
