@@ -317,6 +317,9 @@ export default function Home() {
       {/* <Layout> */}
       <div style={{ padding: '16px', maxWidth: 1100, margin: '0 auto' }}>
         <h1>Welcome to My Site!</h1>
+
+
+        {/*
         <p style={{ fontFamily: "'Antykwa Poltawskiego', 'Times New Roman'", fontSize: '1.25rem' }}>
           Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. <br />
           Ile cię trzeba cenić, ten tylko się dowie, <br />
@@ -331,8 +334,12 @@ export default function Home() {
             />
           </a>
         </p>
+        */}
 
-        {/* ✨ Small boxed pendulum */}
+        {/* ✨ Small boxed pendulum 
+
+{/*
+
         <section style={{ marginTop: 24 }}>
           <TriplePendulum
             style={{
@@ -346,8 +353,10 @@ export default function Home() {
           />
         </section>
 
+*/}
 
 {/*
+
         <section class="laser-card">
   <div class="laser-inner">
     <h2 class="laser-title">Optics & Photonics</h2>
