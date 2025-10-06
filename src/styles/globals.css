@@ -315,6 +315,18 @@ main {
 }
 
 
+.cv-btn-wrap { display:flex; justify-content:center; margin:12px 0 14px; }
+
+.btn-soft {
+  display:inline-block; padding:12px 18px; border-radius:12px;
+  background:#fff; color:#111; text-decoration:none; font-weight:700;
+  border:1px solid #e5e7eb; box-shadow:0 6px 14px rgba(0,0,0,.08);
+  transition:background .15s, box-shadow .15s, border-color .15s, transform .06s;
+}
+.btn-soft:hover { background:#f7f7f7; border-color:#d1d5db; box-shadow:0 8px 18px rgba(0,0,0,.10); }
+.btn-soft:active { transform:translateY(1px); }
+
+
 @media (max-width: 768px) {
   .blog-image.portrait {
     flex: 1 1 48%;   /* allow 2 side by side */
