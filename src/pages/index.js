@@ -75,7 +75,7 @@ const styles = {
   },
   h1: { margin: 0, fontSize: 'clamp(28px, 6vw, 48px)', fontWeight: 800, letterSpacing: '-0.02em' },
   sub: { margin: 0, fontSize: 'clamp(14px, 2.2vw, 18px)', opacity: 0.75, fontWeight: 600 },
-  photoWrap: { display: 'inline-block', marginTop: 16, marginBottom: 12 },
+  photoWrap: { display: 'inline-block', marginTop: 8, marginBottom: 12 },
   photo: {
     display: 'block', width: 'min(320px, 70vw)', height: 'auto', maxHeight: '40vh',
     borderRadius: 12, boxShadow: '0 8px 24px rgba(0,0,0,0.15)', border: '1px solid #e6e6e6',
