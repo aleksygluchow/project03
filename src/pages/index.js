@@ -48,9 +48,11 @@ export default function Home() {
   );
 }
 
+const NAV_H = 64; // adjust if your top nav is taller/shorter
+
 const styles = {
   page: {
-    height: '100svh', // use small viewport units to avoid mobile browser chrome issues
+    height: `calc(100svh - ${NAV_H}px)`, // subtract header height so no vertical overflow
     width: '100%',
     display: 'grid',
     placeItems: 'center',
@@ -58,8 +60,8 @@ const styles = {
     color: '#111',
     fontFamily:
       "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'",
-    padding: 0,           // override global main { padding }
-    overflow: 'hidden',   // prevent scrollbars
+    padding: 0,
+    overflow: 'hidden',
   },
   wrap: {
     width: '100%',
@@ -77,7 +79,7 @@ const styles = {
     display: 'block',
     width: 'min(320px, 70vw)',
     height: 'auto',
-    maxHeight: '46vh',    // keep photo from forcing scroll
+    maxHeight: '40vh', // slightly smaller to guarantee fit below header
     borderRadius: 12,
     boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
     border: '1px solid #e6e6e6',
