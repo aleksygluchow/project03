@@ -29,25 +29,11 @@ export default function Home() {
         </p>
 
         <div className="contact-info">
-          <span className="item">Phone: (+48) 728 035 080</span>
+          Physics Student
           <span className="separator"> | </span>
-          <span className="item">
-            Email:{' '}
-            <a href="mailto:aliaksei.hlukhau@student.uj.edu.pl">
-              aliaksei.hlukhau@student.uj.edu.pl
-            </a>
-          </span>
+          ZULF NMR
           <span className="separator"> | </span>
-          <span className="item">
-            LinkedIn:{' '}
-            <a
-              href="https://www.linkedin.com/in/aleksyg/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              aleksyg
-            </a>
-          </span>
+          ZULF NMR
         </div>
       </div>
         <section style={styles.wrap} aria-label="Intro">
