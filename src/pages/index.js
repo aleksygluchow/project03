@@ -34,7 +34,7 @@ export default function Home() {
           </div>
 
           <div style={styles.ctaRow}>
-            <a href="/cv" style={{ ...styles.btn, ...styles.btnPrimary }}>View CV</a>
+            <Link href="/cv" style={{ ...styles.btn, ...styles.btnPrimary }}>View CV</Link>
             <Link href="/contact" style={{ ...styles.btn, ...styles.btnGhost }}>Contact</Link>
           </div>
         </section>
