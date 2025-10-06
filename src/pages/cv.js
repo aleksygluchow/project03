@@ -24,16 +24,17 @@ export default function CV() {
         </p>
 
 
-        <div style={styles.cvBtnWrap}>
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '12px 0 14px' }}>
   <a
     href="/cv/CV-ENG.pdf"
     target="_blank"
     rel="noopener noreferrer"
-    style={styles.cvBtn}
+    className="btn-soft"
   >
     ↓  Download CV (ENG)
   </a>
 </div>
+
 
 
         <div className="contact-info">

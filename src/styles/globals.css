@@ -290,6 +290,31 @@ main {
   min-width: 160px; /* <– prevents collapsing to full width */
 }
 
+
+.btn-soft {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid #e5e7eb;     /* light border */
+  box-shadow: 0 6px 14px rgba(0,0,0,.08); /* softer shadow */
+  transition: background .15s ease, box-shadow .15s ease, border-color .15s ease, transform .06s ease;
+}
+
+.btn-soft:hover {
+  background: #f7f7f7;
+  border-color: #d1d5db;
+  box-shadow: 0 8px 18px rgba(0,0,0,.10);
+}
+
+.btn-soft:active {
+  transform: translateY(1px);
+}
+
+
 @media (max-width: 768px) {
   .blog-image.portrait {
     flex: 1 1 48%;   /* allow 2 side by side */
