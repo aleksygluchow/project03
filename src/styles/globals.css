@@ -18,29 +18,21 @@ body {
 
 /* ================= Fonts ================= */
 @font-face {
-  font-family: 'Antykwa Poltawskiego';
-  src: url('/fonts/poltawski/antpolt-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Antykwa Poltawskiego';
-  src: url('/fonts/poltawski/antpolt-italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Antykwa Poltawskiego';
-  src: url('/fonts/poltawski/antpolt-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Antykwa Poltawskiego';
-  src: url('/fonts/poltawski/antpolt-bolditalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }
@@ -48,7 +40,6 @@ body {
 p {
   margin: 0;
   line-height: 1.6;
-  font-family: 'Antykwa Poltawskiego';
 }
 
 ul, ol {
@@ -227,7 +218,7 @@ main {
 
 .laser-sub {
   margin: 0;
-  font-family: 'Antykwa Poltawskiego', serif;
+  font-family: serif;
   font-size: clamp(13px, 1.4vw, 16px);
   color: #bcd7d3;
   opacity: .9;
