@@ -21,9 +21,9 @@ export default function Home() {
           <div style={styles.subline}>
             <span>Physics Student</span>
             <span style={styles.sep}>|</span>
-            <span>ZULF NMR</span>
+            <span>Jagiellonian University</span>
             <span style={styles.sep}>|</span>
-            <span>Photonics</span>
+            <span>Kraków</span>
           </div>
 
           <div style={styles.photoWrap}>
