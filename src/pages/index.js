@@ -15,31 +15,22 @@ export default function Home() {
         <meta property="og:image" content="/images/preview.png" />
       </Head>
 
-
-
-
-
       <main style={styles.page} role="main">
-
-
-        <div className="cvbeginning">
-        <h1 style={{ textAlign: 'center' }}>Aliaksei Hlukhau</h1>
-
-        <div className="contact-info">
-          Physics Student
-          <span className="separator"> | </span>
-          ZULF NMR
-          <span className="separator"> | </span>
-          ZULF NMR
-        </div>
-      </div>
         <section style={styles.wrap} aria-label="Intro">
+          <h1 style={styles.h1}>Aliaksei Hlukhau</h1>
+          <div style={styles.subline}>
+            <span>Physics Student</span>
+            <span style={styles.sep}>|</span>
+            <span>ZULF NMR</span>
+            <span style={styles.sep}>|</span>
+            <span>Photonics</span>
+          </div>
 
           <div style={styles.photoWrap}>
             <Image
-              src="/images/IMG_6909-1.JPG"   /* Upewnij się, że wielkość liter pliku jest identyczna */
+              src="/images/IMG_6909-1.JPG"
               alt="Aliaksei Hlukhau"
-              width={640}                     // 2× do wyświetlanych ~320px (ostre)
+              width={640}
               height={800}
               sizes="320px"
               quality={95}
@@ -58,7 +49,7 @@ export default function Home() {
   );
 }
 
-const NAV_H = 64; // ustaw na faktyczną wysokość headera
+const NAV_H = 64;
 
 const styles = {
   page: {
@@ -67,21 +58,42 @@ const styles = {
     display: 'grid', placeItems: 'center',
     background: '#fafafa', color: '#111',
     padding: 0, overflow: 'hidden',
-    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif",
   },
   wrap: {
     width: '100%', maxWidth: 720, textAlign: 'center',
-    display: 'grid', justifyItems: 'center', gap: 12, padding: '0 16px',
+    display: 'grid', justifyItems: 'center',
+    gap: 8,              // tighter vertical rhythm
+    padding: '0 16px',
   },
-  h1: { margin: 0, fontSize: 'clamp(28px, 6vw, 48px)', fontWeight: 800, letterSpacing: '-0.02em' },
-  sub: { margin: 0, fontSize: 'clamp(14px, 2.2vw, 18px)', opacity: 0.75, fontWeight: 600 },
-  photoWrap: { display: 'inline-block', marginTop: 0, marginBottom: 12 },
+  h1: {
+    margin: 0,          // kill global h1 margins
+    fontSize: 'clamp(28px, 6vw, 48px)',
+    fontWeight: 800,
+    letterSpacing: '-0.02em',
+  },
+  subline: {
+    display: 'flex',
+    gap: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: '2px 0 6px', // tiny spacing above/below
+    opacity: 0.8,
+    fontWeight: 600,
+  },
+  sep: { opacity: 0.5 },
+  photoWrap: { display: 'inline-block', marginTop: 4, marginBottom: 8 },
   photo: {
-    display: 'block', width: 'min(320px, 70vw)', height: 'auto', maxHeight: '40vh',
-    borderRadius: 12, boxShadow: '0 8px 24px rgba(0,0,0,0.15)', border: '1px solid #e6e6e6',
+    display: 'block',
+    width: 'min(320px, 70vw)',
+    height: 'auto',
+    maxHeight: '40vh',
+    borderRadius: 12,
+    boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
+    border: '1px solid #e6e6e6',
     objectFit: 'cover',
   },
-  ctaRow: { display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'wrap', marginTop: 8 },
+  ctaRow: { display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'wrap', marginTop: 4 },
   btn: {
     display: 'inline-block', padding: '9px 14px', borderRadius: 10, textDecoration: 'none', fontWeight: 700,
     border: '1px solid #111', transition: 'background .15s ease, color .15s ease, transform .06s ease',
