@@ -11,8 +11,8 @@ export default function Layout({ children }) {
         <Link href="/" legacyBehavior>
           <a className={currentPath === '/' ? 'active' : ''}>Home</a>
         </Link>
-        <Link href="/CV" legacyBehavior>
-          <a className={currentPath === '/CV' ? 'active' : ''}>CV</a>
+        <Link href="/cv" legacyBehavior>
+          <a className={currentPath === '/cv' ? 'active' : ''}>CV</a>
         </Link>
         <Link href="/portfolio" legacyBehavior>
           <a className={currentPath === '/portfolio' ? 'active' : ''}>Portfolio</a>
