@@ -371,8 +371,9 @@ main {
 .card {
   background: #fff;
   border-radius: 7px;
+  border: 1px solid rgb(205, 205, 205);
   padding: clamp(16px, 4vw, 24px);
-  box-shadow: 0 0px 0px rgba(0,0,0,.18), 0 0px 6px rgba(0,0,0,.12);
+  box-shadow: 2px 2px 10px rgba(0,0,0,.18), 0 0px 6px rgba(0,0,0,.12);
   transition: box-shadow .2s ease, transform .06s ease;
   margin-top:1rem;
   margin-bottom:1rem;
