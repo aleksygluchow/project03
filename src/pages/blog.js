@@ -100,44 +100,34 @@ const renderOptions = {
         <meta property="og:image" content="/images/preview.png" />
       </Head>
 
-      <div style={{ maxWidth: '700px', margin: '2rem auto', padding: '0 0.5rem' }}>
-        <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>My Blog</h1>
-        {posts.length === 0 && <p>No blog posts found.</p>}
-        {posts.map((post) => (
-          <article key={post.id} style={{
-            background: '#fff',
-            borderRadius: '12px',
-            boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)',
-            padding: '1.5rem',
-            marginBottom: '2rem',
-            transition: 'box-shadow 0.2s ease',
-          }}
-            onMouseEnter={e => e.currentTarget.style.boxShadow = '0 6px 24px rgba(0, 0, 0, 0.12)'}
-            onMouseLeave={e => e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.08)'}
-          >
-            {post.coverImage && (
-              <div style={{ marginBottom: '1rem' }}>
-                <div className="cover-image">
-                  <Image
-                    src={`https:${post.coverImage}`}
-                    alt={post.title}
-                    fill
-                    className="cover-img"
-                  />
-                </div>
-              </div>
-            )}
+<div className="page-container">
+  <h1 className="page-title">Blog</h1>
+  {posts.length === 0 && <p>No blog posts found.</p>}
+  {posts.map((post) => (
+    <article key={post.id} className="card" style={{ marginBottom: '2rem' }}>
+      {post.coverImage && (
+        <div style={{ marginBottom: '1rem' }}>
+          <div className="cover-image">
+            <Image
+              src={`https:${post.coverImage}`}
+              alt={post.title}
+              fill
+              className="cover-img"
+            />
+          </div>
+        </div>
+      )}
 
-            <small style={{ color: '#666', fontSize: '0.9rem' }}>
-              {new Date(post.publishDate).toLocaleDateString()}
-            </small>
-            <h2 style={{ marginTop: 0 }}>{post.title}</h2>
-            <div className="blog-content">
-              {documentToReactComponents(post.content, renderOptions)}
-            </div>
-          </article>
-        ))}
+      <small style={{ color: '#666', fontSize: '0.9rem' }}>
+        {new Date(post.publishDate).toLocaleDateString()}
+      </small>
+      <h2 style={{ marginTop: 0 }}>{post.title}</h2>
+      <div className="blog-content">
+        {documentToReactComponents(post.content, renderOptions)}
       </div>
+    </article>
+  ))}
+</div>
 
       {lightboxOpen && (
         <Lightbox

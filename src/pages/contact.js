@@ -19,59 +19,36 @@ export default function Contact() {
   <meta property="og:image" content="/images/preview.png" /> {/* Optional image */}
       </Head>
 
-    <div style={styles.container}>
-      <h1 style={styles.header}>Contact Me</h1>
-      <p style={styles.text}> Im always happy to connect. Feel free to reach out through any of the platforms below:</p>
+    <div className="card card--narrow">
+  <h1 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#333' }}>Contact Me</h1>
+  <p style={{ marginBottom: '1.5rem', fontSize: '1.1rem', lineHeight: 1.5 }}>
+    Im always happy to connect. Feel free to reach out through any of the platforms below:
+  </p>
 
-      <ul style={styles.list}>
-        <li style={styles.item}>
-          📧 <a href="mailto:aleksy.gluchow@gmail.com" style={styles.link}>aleksy.gluchow@gmail.com</a>
-        </li>
-        <li style={styles.item}>
-          📸 <a href="https://instagram.com/aleksy.gluchow" style={styles.link} target="_blank" rel="noopener noreferrer">Instagram</a>
-        </li>
-        <li style={styles.item}>
-          👤 <a href="https://facebook.com/aleksy.gluchow" style={styles.link} target="_blank" rel="noopener noreferrer">Facebook</a>
-        </li>
-        <li style={styles.item}>
-          💼 <a href="https://www.linkedin.com/in/aleksyg/" style={styles.link} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
+  <ul style={{ listStyle: 'none', padding: 0 }}>
+    <li style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>
+      📧 <a href="mailto:aleksy.gluchow@gmail.com" style={{ color: '#0070f3', textDecoration: 'none' }}>
+        aleksy.gluchow@gmail.com
+      </a>
+    </li>
+    <li style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>
+      📸 <a href="https://instagram.com/aleksy.gluchow" target="_blank" rel="noopener noreferrer" style={{ color: '#0070f3', textDecoration: 'none' }}>
+        Instagram
+      </a>
+    </li>
+    <li style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>
+      👤 <a href="https://facebook.com/aleksy.gluchow" target="_blank" rel="noopener noreferrer" style={{ color: '#0070f3', textDecoration: 'none' }}>
+        Facebook
+      </a>
+    </li>
+    <li style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>
+      💼 <a href="https://www.linkedin.com/in/aleksyg/" target="_blank" rel="noopener noreferrer" style={{ color: '#0070f3', textDecoration: 'none' }}>
+        LinkedIn
+      </a>
+    </li>
+  </ul>
+</div>
 
     </>
   );
 }
-
-const styles = {
-  container: {
-    maxWidth: '600px',
-    margin: '2rem auto',
-    padding: '2rem',
-    backgroundColor: '#fff',
-    borderRadius: '8px',
-    boxShadow: '0 8px 15px rgba(0, 0, 0, 0.1)',
-  },
-  header: {
-    fontSize: '2rem',
-    marginBottom: '1rem',
-    color: '#333',
-  },
-  text: {
-    marginBottom: '1.5rem',
-    fontSize: '1.1rem',
-    lineHeight: '1.5',
-  },
-  list: {
-    listStyle: 'none',
-    padding: 0,
-  },
-  item: {
-    marginBottom: '1rem',
-    fontSize: '1.1rem',
-  },
-  link: {
-    color: '#0070f3',
-    textDecoration: 'none',
-  },
-};

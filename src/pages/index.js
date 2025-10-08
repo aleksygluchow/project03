@@ -18,13 +18,17 @@ export default function Home() {
       <main style={styles.page} role="main">
         <section style={styles.wrap} aria-label="Intro">
           <h1 style={styles.h1}>Aliaksei Hlukhau</h1>
-          <div style={styles.subline}>
-            <span>Physics Student</span>
-            <span style={styles.sep}>|</span>
-            <span>Jagiellonian University</span>
-            <span style={styles.sep}>|</span>
-            <span>Kraków</span>
-          </div>
+          <div className="contact-info">
+          <span className="item">Physics student</span>
+          <span className="separator"> | </span>
+          <span className="item">
+            Jagiellonian University
+          </span>
+          <span className="separator"> | </span>
+          <span className="item">
+            Kraków, Poland
+          </span>
+        </div>
 
           <div style={styles.photoWrap}>
             <Image

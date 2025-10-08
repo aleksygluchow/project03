@@ -14,13 +14,13 @@ export default function Portfolio() {
         <meta property="og:image" content="/images/preview.png" />
       </Head>
 
-      <div style={{
-        maxWidth: '800px',
-        margin: '0 auto',
-        padding: '3rem 1rem',
-        textAlign: 'center'
-      }}>
-        <h1 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Portfolio</h1>
+      <div className="page-container" style={{ textAlign: 'center' }}>
+  <h1 className="page-title">Portfolio</h1>
+
+  <h2 style={{ marginTop: '1.5rem', fontSize: '1.25rem', fontWeight: 600, color: '#333' }}>
+    Portfolio not found (yet).
+  </h2>
+
 
         <div style={{
   position: 'relative',
@@ -46,15 +46,6 @@ export default function Portfolio() {
 </div>
 
 
-        <h2 style={{
-          marginTop: '1.5rem',
-          fontSize: '1.25rem',
-          fontWeight: '600',
-          color: '#333'
-        }}>
-          Portfolio not found (yet).
-        </h2>
-
         <p style={{
           marginTop: '0.75rem',
           color: '#666',
@@ -63,7 +54,7 @@ export default function Portfolio() {
           lineHeight: 1.5
         }}>
           The artwork shown here is the <strong>Siemiradzki Curtain</strong>, designed by Henryk Siemiradzki  
-          for the <a href="https://pl.wikipedia.org/wiki/Kurtyna_Teatru_im._Juliusza_S%C5%82owackiego_w_Krakowie" target="_blank" rel="noopener noreferrer">
+          for the <a href="https://en.wikipedia.org/wiki/Juliusz_S%C5%82owacki_Theatre" target="_blank" rel="noopener noreferrer">
           Słowacki Theatre in Kraków</a>.
         </p>
       </div>

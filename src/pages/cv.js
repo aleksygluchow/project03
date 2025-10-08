@@ -17,27 +17,17 @@ export default function CV() {
         <meta property="og:image" content="/images/preview.png" />
       </Head>
 
-      <div className="cvbeginning">
-        <h1 style={{ textAlign: 'center' }}>Aliaksei Hlukhau</h1>
-        <p style={{ textAlign: 'center' }}>
-          <em>(pronounced: Aleksy Głuchow)</em>
-        </p>
+      <div className="page-container">
+  <h1 className="page-title">Aliaksei Hlukhau</h1>
+  <p className="page-subtitle"><em>(pronounced: Aleksy Głuchow)</em></p>
 
+  <div className="cv-btn-wrap">
+    <a href="/cv/CV-ENG.pdf" target="_blank" rel="noopener noreferrer" className="btn-soft">
+      Download CV (ENG)
+    </a>
+  </div>
 
-        <div style={{ display: 'flex', justifyContent: 'center', margin: '12px 0 14px' }}>
-  <a
-    href="/cv/CV-ENG.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn-soft"
-  >
-    Download CV (ENG)
-  </a>
-</div>
-
-
-
-        <div className="contact-info">
+  <div className="contact-info">
           <span className="item">Phone: (+48) 728 035 080</span>
           <span className="separator"> | </span>
           <span className="item">
