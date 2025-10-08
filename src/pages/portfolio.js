@@ -25,7 +25,7 @@ export default function Portfolio() {
         <div style={{
   position: 'relative',
   width: '100%',
-  maxWidth: '500px',   // ✅ don’t let it get huge
+  maxWidth: '500px',  
   margin: '0 auto'
 }}>
   <Image
