@@ -445,7 +445,7 @@ main {
 
 @media (max-width: 769px) {
   main {
-    padding: 0.25rem;
+    padding: 0.1rem;
   }
 
   .contact-info .item {
