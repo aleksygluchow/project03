@@ -104,7 +104,7 @@ const renderOptions = {
   <h1 className="page-title">Blog</h1>
   {posts.length === 0 && <p>No blog posts found.</p>}
   {posts.map((post) => (
-    <article key={post.id} className="card" style={{ marginBottom: '2rem' }}>
+    <article key={post.id} className="card">
       {post.coverImage && (
         <div style={{ marginBottom: '1rem' }}>
           <div className="cover-image">
