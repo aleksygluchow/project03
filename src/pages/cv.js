@@ -28,7 +28,7 @@ export default function CV() {
   </div>
 
   <div className="contact-info">
-          <span className="item">Phone: (+48) 728 035 080</span>
+          {/*<span className="item">Phone: (+48) 728 035 080</span>*/}
           <span className="separator"> | </span>
           <span className="item">
             Email:{' '}
