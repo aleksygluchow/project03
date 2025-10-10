@@ -20,7 +20,7 @@ export default function Contact() {
       </Head>
 
     <div className="card card--narrow">
-  <h1 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#333' }}>Contact Me</h1>
+  <h1 style={{ marginBottom: '1rem', color: '#333' }}>Contact Me</h1>
   <p style={{ marginBottom: '1.5rem', fontSize: '1.1rem', lineHeight: 1.5 }}>
     Im always happy to connect. Feel free to reach out through any of the platforms below:
   </p>

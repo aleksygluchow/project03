@@ -79,6 +79,7 @@ h1 {
 h2 {
   margin: 1.5rem 0 1rem 0;
   line-height: 1.2;
+  color: green
 }
 
 h3, h4 {
@@ -284,7 +285,7 @@ main {
 }
 
 .cover-img {
-  border-radius: 8px;
+  border-radius: 5px;
   object-fit: cover;
 }
 

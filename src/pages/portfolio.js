@@ -26,7 +26,7 @@ export default function Portfolio() {
   position: 'relative',
   width: '100%',
   maxWidth: '500px',  
-  margin: '0 auto'
+  margin: '0 auto',
 }}>
   <Image
     src="/images/siemiradzki.jpg"
@@ -34,7 +34,7 @@ export default function Portfolio() {
     width={600}
     height={400}
     style={{
-      objectFit: 'contain',
+      objectFit: 'cover',
       borderRadius: '8px',
       boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
       maxHeight: '300px',    // ✅ cap height
