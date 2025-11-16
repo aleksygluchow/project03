@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Aliaksei Hlukhau</title>
+        <title>a Aliaksei Hlukhau</title>
         <meta name="description" content="Aliaksei Hlukhau – Physics MSc (Photonics & ZULF NMR)." />
         <meta property="og:title" content="Aliaksei Hlukhau" />
         <meta property="og:description" content="Physics MSc student — Photonics & ZULF NMR." />
