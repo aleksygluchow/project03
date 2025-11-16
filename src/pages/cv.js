@@ -7,18 +7,18 @@ export default function CV() {
     <>
       <Head>
         <title>CV</title>
-        <meta name="description" content="Aliaksei Hlukhau's webpage." />
+        <meta name="description" content="Aleksy Głuchow's webpage." />
 
         {/* Open Graph (Telegram, Messenger) */}
         <meta property="og:title" content="CV" />
-        <meta property="og:description" content="Aliaksei Hlukhau – Physics student." />
+        <meta property="og:description" content="Aleksy Głuchow – Physics student." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.eigen.to" />
         <meta property="og:image" content="/images/preview.png" />
       </Head>
 
       <div className="page-container">
-  <h1 className="page-title">Aliaksei Hlukhau</h1>
+  <h1 className="page-title" >Aleksy Głuchow</h1>
   <p className="page-subtitle"><em>(pronounced: Aleksy Głuchow)</em></p>
 
   <div className="cv-btn-wrap">
@@ -247,3 +247,14 @@ export default function CV() {
     </>
   );
 }
+
+
+
+const styles = {
+  
+  h1: {
+    margin: 0,          // kill global h1 margins
+    fontSize: 'clamp(28px, 6vw, 48px)',
+    letterSpacing: '-0.02em',
+  },
+};
