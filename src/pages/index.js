@@ -17,9 +17,9 @@ export default function Home() {
 
       <main style={styles.page} role="main">
         <section style={styles.wrap} aria-label="Intro">
-          <h1 style={styles.h1}>Aliaksei Hlukhau</h1>
+          <h1 style={styles.h1}>abc Aliaksei Hlukhau</h1>
           <div className="contact-info">
-          <span className="item">Physics student</span>
+          <span className="item">Physics studentt</span>
           <span className="separator"> | </span>
           <span className="item">
             Jagiellonian University
