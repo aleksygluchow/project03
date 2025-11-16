@@ -91,7 +91,7 @@ const renderOptions = {
   return (
     <>
       <Head>
-        <title>Blog</title>
+        <title>Blogg</title>
         <meta name="description" content="Aliaksei Hlukhau's webpage." />
         <meta property="og:title" content="Blog" />
         <meta property="og:description" content="Aliaksei Hlukhau – Physics student." />
