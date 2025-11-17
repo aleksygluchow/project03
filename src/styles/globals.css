@@ -60,6 +60,7 @@ h1 {
     serif;
   transform: scaleY(1.2);
   transform-origin: center;
+  font-weight: bold;
 }
 
 h2 {
