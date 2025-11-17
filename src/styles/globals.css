@@ -48,7 +48,7 @@ h1 {
   font-size: clamp(28px, 6vw, 48px);
 
   font-family:
-    Didot,                  /*macOS / iOS */
+    /*Didot,                  /*macOS / iOS */
     "Bodoni MT",            /*Windows */
     "Bodoni 72",           /* newer macOS */
     "Bodoni 72 Oldstyle",
@@ -60,7 +60,7 @@ h1 {
     serif;
   transform: scaleY(1.2);
   transform-origin: center;
-  font-weight: bold;
+  font-weight:600;
 }
 
 h2 {
