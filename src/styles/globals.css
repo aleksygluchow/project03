@@ -46,6 +46,20 @@ h1 {
   margin: 0;
   line-height: 1.2;
   font-size: clamp(28px, 6vw, 48px);
+
+  font-family:
+    Didot,                  macOS / iOS */
+    "Bodoni MT",           /* Windows */
+    "Bodoni 72",           /* newer macOS */
+    "Bodoni 72 Oldstyle",
+    "Libre Bodoni",        /* Linux fallbacks */
+    "Book Antiqua",
+    "Palatino Linotype",
+    Palatino,
+    "URW Palladio L",
+    serif;
+  transform: scaleY(1.2);
+  transform-origin: center;
 }
 
 h2 {
