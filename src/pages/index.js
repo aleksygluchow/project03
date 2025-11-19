@@ -70,10 +70,14 @@ const styles = {
     gap: 8,              // tighter vertical rhythm
     padding: '0 16px',
   },
+
+  /*
   h1: {
     margin: 0,          // kill global h1 margins
     fontSize: 'clamp(28px, 6vw, 48px)',
   },
+
+  */
   subline: {
     display: 'flex',
     gap: 8,
