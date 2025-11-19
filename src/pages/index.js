@@ -18,7 +18,7 @@ export default function Home() {
 
       <main style={styles.page} role="main">
         <section style={styles.wrap} aria-label="Intro">
-          <h1 style={styles.h1}>Aleksy Głuchow</h1>
+          <h1>Aleksy Głuchow</h1>
           <div className="contact-info">
           <span className="item">Physics student</span>
           <span className="separator"> | </span>
