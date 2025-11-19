@@ -6,9 +6,15 @@ export default function Home() {
   return (
     <>
       <Head>
+<<<<<<< HEAD
+        <title>a Aliaksei Hlukhau</title>
+        <meta name="description" content="Aliaksei Hlukhau – Physics MSc (Photonics & ZULF NMR)." />
+        <meta property="og:title" content="Aliaksei Hlukhau" />
+=======
         <title>Aleksy Głuchow</title>
         <meta name="description" content="Aleksy Głuchow – Physics MSc (Photonics & ZULF NMR)." />
         <meta property="og:title" content="Aleksy Głuchow" />
+>>>>>>> a4380cda57ea74dc1a058b53a080201f2910e74c
         <meta property="og:description" content="Physics MSc student — Photonics & ZULF NMR." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.eigen.to" />
