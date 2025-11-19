@@ -1,52 +1,23 @@
+/* ========== RESET ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-:root {
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-}
-
-body {
-  font-family: var(--font-sans);
-}
-
-/* usuń stare @font-face i p { font-family: ... } */
-
-
+/* ========== BASE TYPOGRAPHY & BODY ========== */
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   background-color: #fafafa;
   color: #222;
-}
-
-/* ================= Fonts ================= */
-@font-face {
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-weight: 700;
-  font-style: italic;
 }
 
 p {
@@ -54,7 +25,8 @@ p {
   line-height: 1.6;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-left: 1.25rem;
 }
@@ -69,20 +41,52 @@ hr {
   border-top: 1px solid #ccc;
 }
 
-/* ================= Headings ================= */
+/* ========== HEADINGS ========== */
 h1 {
-  margin-top: 1rem;
-  margin-bottom: 0;
+  margin: 0;
   line-height: 1.2;
+  font-size: clamp(28px, 6vw, 48px);
+
+  font-family:
+    /*Didot,                  /*macOS / iOS */
+    "Bodoni MT",            /*Windows */
+    "Bodoni 72",           /* newer macOS */
+    "Bodoni 72 Oldstyle",
+    "Libre Bodoni",        /* Linux fallbacks */
+    "Book Antiqua",
+    "Palatino Linotype",
+    Palatino,
+    "URW Palladio L",
+    serif;
+  transform: scaleY(1.2);
+  transform-origin: center;
+  font-weight:600;
 }
 
 h2 {
   margin: 1.5rem 0 1rem 0;
   line-height: 1.2;
   color: brown;
+<<<<<<< HEAD
+=======
+  font-size: 1.8rem;
+  font-family:
+    Cambria,
+    Garamond,
+    "Apple Garamond",
+    "ITC Garamond",
+    "Palatino Linotype",
+    Palatino,
+    "URW Palladio L",
+    "Playfair Display",
+    "Merriweather",
+    Georgia,
+    serif;
+>>>>>>> a4380cda57ea74dc1a058b53a080201f2910e74c
 }
 
-h3, h4 {
+h3,
+h4 {
   margin: 1rem 0 0.25rem 0;
   font-size: 1rem;
   line-height: 1.6;
@@ -90,47 +94,70 @@ h3, h4 {
   color: #222;
 }
 
-h5, h6 {
+h5,
+h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
-/* ================= Navigation ================= */
+/* ========== NAVIGATION ========== */
 nav {
   background: #222;
-  color: white;
-  padding: 1rem;  
+  color: #fff;
+  padding: 1rem;
 }
 
 nav a {
   margin-right: 1rem;
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
 nav a.active {
   font-weight: bold;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #fff;
 }
 
-/* ================= Layout ================= */
+/* ========== LAYOUT / PAGE WRAPPERS ========== */
 main {
   padding: 2rem;
 }
 
-.cvbeginning {
+.page-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
-.cvbeginning h1 {
-  margin-top: 2rem;
-  margin-bottom: 0;
-  line-height: 1.2;
+.page-title {
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  font-size: clamp(30px, 100vw, 33px);
+  margin: 32px 0 12px;
 }
 
+@media (min-width: 768px) {
+  .page-title {
+    font-size: clamp(34px, 4vw, 52px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-title {
+    font-size: clamp(40px, 3vw, 64px);
+  }
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #666;
+  margin: 4px 0 16px;
+  font-style: italic;
+}
+
+/* ========== CONTACT INFO LINE ========== */
 .contact-info {
   text-align: center;
   margin-bottom: 0;
@@ -144,139 +171,7 @@ main {
   display: inline;
 }
 
-.image-wrapper {
-  position: relative;   /* required for fill */
-  width: 100%;
-  max-width: 400px;     /* prevent huge scaling */
-  height: 250px;        /* control height */
-  margin: 0 auto;       /* center it */
-}
-.responsive-img {
-  object-fit: contain;  /* don’t crop */
-  pointer-events: none; /* stops blocking nav clicks */
-}
-
-
-/* ---- Page wrappers / titles ---- */
-.page-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;                 /* horizontal padding only */
-}
-
-.page-title {
-  text-align: center;
-  font-weight: 800;
-  line-height: 1.5;
-  letter-spacing: .2px;
-  font-size: clamp(30px, 100vw, 33px);
-  margin: 32px 0 12px;             /* <<< unified top gap */
-}
-
-@media (min-width: 768px) {
-  .page-title { font-size: clamp(34px, 4vw, 52px); }     /* tablets & laptops */
-}
-
-@media (min-width: 1280px) {
-  .page-title { font-size: clamp(40px, 3vw, 64px); }     /* large desktops */
-}
-
-.page-subtitle {
-  text-align: center;
-  color: #666;
-  margin: 4px 0 16px;
-  font-style: italic;
-}
-
-/* (fixes from earlier) */
-.card { box-shadow: 0 6px 20px rgba(0,0,0,.18), 0 2px 6px rgba(0,0,0,.12); }
-@media (hover:hover) {
-  .card:hover { box-shadow: 0 10px 28px rgba(0,0,0,.22), 0 4px 10px rgba(0,0,0,.12); }
-}
-
-
-/* ================= Laser Card ================= */
-.laser-card {
-  position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  padding: 28px 24px;
-  background: radial-gradient(120% 100% at 50% 0%, #0d1422 0%, #0a0f1c 55%, #070b14 100%);
-  border: 1.5px solid rgba(48,213,200,.35);
-  box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
-  isolation: isolate;
-}
-
-.laser-card::before {
-  content: "";
-  position: absolute; inset: 0;
-  background:
-    linear-gradient(transparent 31px, rgba(48,213,200,.08) 32px) 0 0/32px 32px,
-    linear-gradient(90deg, transparent 31px, rgba(48,213,200,.08) 32px) 0 0/32px 32px;
-  filter: drop-shadow(0 0 2px rgba(48,213,200,.15));
-  mix-blend-mode: screen;
-  opacity: .8;
-  animation: grid-pan 14s linear infinite;
-}
-
-.laser-card::after {
-  content: "";
-  position: absolute; inset: -40% -20%;
-  background:
-    radial-gradient(120% 35% at 50% 50%, rgba(255,255,255,.08), transparent 60%) top/100% 60% no-repeat,
-    repeating-linear-gradient(
-      90deg,
-      rgba(255,255,255,0) 0px,
-      rgba(255,255,255,.22) 1px,
-      rgba(255,255,255,0) 3px,
-      rgba(255,255,255,0) 9px
-    );
-  opacity: .12;
-  transform: rotate(8deg);
-  animation: frings 9s ease-in-out infinite;
-  mix-blend-mode: screen;
-}
-
-.laser-inner::before {
-  content: "";
-  position: absolute; left: -20%; top: -30%;
-  width: 140%; height: 60%;
-  background:
-    radial-gradient(35% 140% at 50% 50%, rgba(48,213,200,.55), rgba(48,213,200,0) 70%),
-    linear-gradient(to right, rgba(48,213,200,0), rgba(48,213,200,.35), rgba(48,213,200,0));
-  filter: blur(6px);
-  transform-origin: 50% 120%;
-  animation: sweep 5.6s cubic-bezier(.55,.15,.2,.95) infinite;
-  pointer-events: none;
-}
-
-.laser-inner {
-  position: relative;
-  z-index: 1;
-  backdrop-filter: blur(2px) saturate(110%);
-  -webkit-backdrop-filter: blur(2px) saturate(110%);
-}
-
-.laser-title {
-  margin: 0 0 6px 0;
-  font-family: 'UnifrakturCook', system-ui, serif;
-  font-size: clamp(22px, 3.2vw, 34px);
-  letter-spacing: .5px;
-  color: #dff7f4;
-  text-shadow:
-    0 0 12px rgba(48,213,200,.35),
-    0 0 2px rgba(48,213,200,.6);
-}
-
-.laser-sub {
-  margin: 0;
-  font-family: serif;
-  font-size: clamp(13px, 1.4vw, 16px);
-  color: #bcd7d3;
-  opacity: .9;
-}
-
-/* ================= Blog Images ================= */
+/* ========== BLOG IMAGES & CONTENT ========== */
 .cover-image {
   position: relative;
   width: 100%;
@@ -292,17 +187,17 @@ main {
 .blog-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;              /* tighter spacing */
+  gap: 0.5rem;
   justify-content: center;
-  align-items: flex-start;  /* align tops evenly */
+  align-items: flex-start;
 }
 
 .blog-content img {
-  max-width: 90%;      /* don’t let it overflow */
+  max-width: 90%;
   height: auto;
   border-radius: 8px;
   object-fit: contain;
-  margin: 0 auto;       /* center */
+  margin: 0 auto;
   display: block;
 }
 
@@ -325,11 +220,17 @@ main {
 }
 
 .blog-image.portrait {
-  flex: 1 1 48%;    /* allow 2 per row */
+  flex: 1 1 48%;
   max-width: 48%;
-  min-width: 160px; /* <– prevents collapsing to full width */
+  min-width: 160px;
 }
 
+/* ========== BUTTONS (CV DOWNLOAD, ETC.) ========== */
+.cv-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0 14px;
+}
 
 .btn-soft {
   display: inline-block;
@@ -339,111 +240,58 @@ main {
   color: #111;
   text-decoration: none;
   font-weight: 700;
-  border: 1px solid #e5e7eb;     /* light border */
-  box-shadow: 0 6px 14px rgba(0,0,0,.08); /* softer shadow */
-  transition: background .15s ease, box-shadow .15s ease, border-color .15s ease, transform .06s ease;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition:
+    background 0.15s,
+    box-shadow 0.15s,
+    border-color 0.15s,
+    transform 0.06s;
 }
 
 .btn-soft:hover {
   background: #f7f7f7;
   border-color: #d1d5db;
-  box-shadow: 0 8px 18px rgba(0,0,0,.10);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
 .btn-soft:active {
   transform: translateY(1px);
 }
 
-
-.cv-btn-wrap { display:flex; justify-content:center; margin:12px 0 14px; }
-
-.btn-soft {
-  display:inline-block; padding:12px 18px; border-radius:12px;
-  background:#fff; color:#111; text-decoration:none; font-weight:700;
-  border:1px solid #e5e7eb; box-shadow:0 6px 14px rgba(0,0,0,.08);
-  transition:background .15s, box-shadow .15s, border-color .15s, transform .06s;
-}
-.btn-soft:hover { background:#f7f7f7; border-color:#d1d5db; box-shadow:0 8px 18px rgba(0,0,0,.10); }
-.btn-soft:active { transform:translateY(1px); }
-
-
-
-/* ---- Generic card ---- */
+/* ========== CARDS (BLOG, CONTACT, ETC.) ========== */
 .card {
   background: #fff;
   border-radius: 7px;
   border: 1px solid rgb(205, 205, 205);
   padding: clamp(16px, 4vw, 24px);
-  box-shadow: 2px 2px 10px rgba(0,0,0,.18), 0 0px 6px rgba(0,0,0,.12);
-  transition: box-shadow .2s ease, transform .06s ease;
-  margin-top:1rem;
-  margin-bottom:1rem;
+  box-shadow:
+    2px 2px 10px rgba(0, 0, 0, 0.18),
+    0 0px 6px rgba(0, 0, 0, 0.12);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.06s ease;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card--narrow {
+  max-width: 600px;
+  width: min(92%, 600px);
+  margin: clamp(16px, 4vw, 32px) auto;
 }
 
 /* subtle lift on hover (desktop only) */
-@media (hover:hover) {
+@media (hover: hover) {
   .card:hover {
-    box-shadow: 0 4 px 11px rgba(0,0,0,.22), 0 1px 10px rgba(0,0,0,.12);
+    box-shadow:
+      0 4px 11px rgba(0, 0, 0, 0.22),
+      0 1px 10px rgba(0, 0, 0, 0.12);
     transform: translateY(-1px);
   }
 }
 
-/* ---- Narrow page card (e.g., Contact) ---- */
-.card--narrow {
-  max-width: 600px;
-  width: min(92%, 600px);         /* visible gutters on small screens */
-  margin: clamp(16px, 4vw, 32px) auto;
-}
-
-@media (max-width: 768px) {
-  .card--narrow {
-    /* moderate top space, with iOS safe area */
-    margin-top: clamp(36px, calc(12vw + env(safe-area-inset-top, 0px)), 88px);
-    /* moderate bottom space */
-    margin-bottom: clamp(2px, 7vw, 4px);
-  }
-}
-
-
-
-/* Optional page container for Blog list */
-.page-narrow {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 0 .5rem;
-}
-
-
-@media (max-width: 768px) {
-  .blog-image.portrait {
-    flex: 1 1 48%;   /* allow 2 side by side */
-    max-width: 48%;
-  }
-}
-
-
-/* ================= Animations ================= */
-@keyframes grid-pan {
-  0%   { transform: translate3d(0,0,0) }
-  100% { transform: translate3d(-32px,-32px,0) }
-}
-
-@keyframes sweep {
-  0%   { transform: rotate(-8deg) translateY(0);   opacity:.55 }
-  50%  { transform: rotate( 8deg) translateY(4%);  opacity:.75 }
-  100% { transform: rotate(-8deg) translateY(0);   opacity:.55 }
-}
-
-@keyframes frings {
-  0%,100% { transform: rotate(8deg) scale(1);   opacity:.12 }
-  50%     { transform: rotate(6deg) scale(1.03); opacity:.18 }
-}
-
-/* ================= Responsive tweaks ================= */
-@media (min-width: 640px) {
-  .laser-card { padding: 32px 28px; }
-}
-
+/* ========== RESPONSIVE TWEAKS ========== */
 @media (max-width: 769px) {
   main {
     padding: 0.1rem;
@@ -464,21 +312,17 @@ main {
     width: max-content;
     padding-left: 0.5rem;
   }
-
-  .cvbeginning {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0.2rem;
-  }
 }
 
+/* blog portrait images on smaller screens */
 @media (max-width: 768px) {
-  .portfolio-image {
-    max-height: 220px;  /* smaller on phones */
+  .blog-image.portrait {
+    flex: 1 1 48%;
+    max-width: 48%;
   }
 }
 
-/* Extra tweak for very small phones */
+/* very small phones */
 @media (max-width: 480px) {
   .blog-image.portrait {
     flex: 1 1 100%;

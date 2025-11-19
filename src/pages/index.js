@@ -6,9 +6,15 @@ export default function Home() {
   return (
     <>
       <Head>
+<<<<<<< HEAD
         <title>a Aliaksei Hlukhau</title>
         <meta name="description" content="Aliaksei Hlukhau – Physics MSc (Photonics & ZULF NMR)." />
         <meta property="og:title" content="Aliaksei Hlukhau" />
+=======
+        <title>Aleksy Głuchow</title>
+        <meta name="description" content="Aleksy Głuchow – Physics MSc (Photonics & ZULF NMR)." />
+        <meta property="og:title" content="Aleksy Głuchow" />
+>>>>>>> a4380cda57ea74dc1a058b53a080201f2910e74c
         <meta property="og:description" content="Physics MSc student — Photonics & ZULF NMR." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.eigen.to" />
@@ -17,7 +23,7 @@ export default function Home() {
 
       <main style={styles.page} role="main">
         <section style={styles.wrap} aria-label="Intro">
-          <h1 style={styles.h1}>Aliaksei Hlukhau</h1>
+          <h1 style={styles.h1}>Aleksy Głuchow</h1>
           <div className="contact-info">
           <span className="item">Physics student</span>
           <span className="separator"> | </span>
@@ -33,7 +39,7 @@ export default function Home() {
           <div style={styles.photoWrap}>
             <Image
               src="/images/IMG_6909-1.JPG"
-              alt="Aliaksei Hlukhau"
+              alt="Aleksy Głuchow"
               width={640}
               height={800}
               sizes="320px"
@@ -73,7 +79,6 @@ const styles = {
   h1: {
     margin: 0,          // kill global h1 margins
     fontSize: 'clamp(28px, 6vw, 48px)',
-    letterSpacing: '-0.02em',
   },
   subline: {
     display: 'flex',
