@@ -118,10 +118,10 @@ const renderOptions = {
         </div>
       )}
 
-      <small style={{ color: '#666', fontSize: '0.9rem' }}>
+      <small style={{ color: '#555', fontSize: '0.9rem'}}>
         {new Date(post.publishDate).toLocaleDateString()}
       </small>
-      <h2 style={{ marginTop: 0 }}>{post.title}</h2>
+      <h2>{post.title}</h2>
       <div className="blog-content">
         {documentToReactComponents(post.content, renderOptions)}
       </div>

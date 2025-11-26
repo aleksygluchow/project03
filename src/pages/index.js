@@ -45,8 +45,8 @@ export default function Home() {
           </div>
 
           <div style={styles.ctaRow}>
-            <Link href="/cv" style={{ ...styles.btn, ...styles.btnPrimary }}>View CV</Link>
-            <Link href="/contact" style={{ ...styles.btn, ...styles.btnGhost }}>Contact</Link>
+            <Link href="/cv" className="btn btnPrimary">View CV</Link>
+            <Link href="/contact" className="btn btnGhost">Contact</Link>
           </div>
         </section>
       </main>
@@ -101,10 +101,5 @@ const styles = {
     objectFit: 'cover',
   },
   ctaRow: { display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'wrap', marginTop: 4 },
-  btn: {
-    display: 'inline-block', padding: '9px 14px', borderRadius: 10, textDecoration: 'none', fontWeight: 700,
-    border: '1px solid #111', transition: 'background .15s ease, color .15s ease, transform .06s ease',
-  },
-  btnPrimary: { background: '#111', color: '#fff' },
-  btnGhost: { background: '#fff', color: '#111' },
+  
 };
