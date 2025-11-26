@@ -71,17 +71,19 @@ h2 {
   font-size: 1.8rem;
   font-family:
     Cambria,
+    "Palatino Linotype",
+    Palatino,
     Garamond,
     "Apple Garamond",
     "ITC Garamond",
-    "Palatino Linotype",
-    Palatino,
     "URW Palladio L",
     "Playfair Display",
     "Merriweather",
     Georgia,
     serif,
     Verdana;
+
+    letter-spacing: -1px;
 }
 
 h3,
