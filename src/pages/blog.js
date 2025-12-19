@@ -100,7 +100,7 @@ const renderOptions = {
         <meta property="og:image" content="/images/preview.png" />
       </Head>
 
-empty here hahhaahaahah
+empty here
     </>
   );
 }
