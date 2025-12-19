@@ -100,42 +100,7 @@ const renderOptions = {
         <meta property="og:image" content="/images/preview.png" />
       </Head>
 
-<div className="page-container">
-  <h1 className="page-title">Blog</h1>
-  {posts.length === 0 && <p>No blog posts found.</p>}
-  {posts.map((post) => (
-    <article key={post.id} className="card">
-      {post.coverImage && (
-        <div style={{ marginBottom: '1rem' }}>
-          <div className="cover-image">
-            <Image
-              src={`https:${post.coverImage}`}
-              alt={post.title}
-              fill
-              className="cover-img"
-            />
-          </div>
-        </div>
-      )}
-
-      <small style={{ color: '#555', fontSize: '0.9rem'}}>
-        {new Date(post.publishDate).toLocaleDateString()}
-      </small>
-      <h2>{post.title}</h2>
-      <div className="blog-content">
-        {documentToReactComponents(post.content, renderOptions)}
-      </div>
-    </article>
-  ))}
-</div>
-
-      {lightboxOpen && (
-        <Lightbox
-          open={lightboxOpen}
-          close={() => setLightboxOpen(false)}
-          slides={[{ src: lightboxImage }]}
-        />
-      )}
+empty here hahhaahaahah
     </>
   );
 }
