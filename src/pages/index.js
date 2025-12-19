@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
  <title>Aliaksei Hlukhau</title>
         <meta name="description" content="Aliaksei Hlukhau – Physics MSc (Photonics & ZULF NMR)." />
-        <meta property="og:title" content="Aliaksei Hlukhau" />
         <meta property="og:title" content="Aleksy Głuchow" />
         <meta property="og:description" content="Physics MSc student — Photonics & ZULF NMR." />
         <meta property="og:type" content="website" />
