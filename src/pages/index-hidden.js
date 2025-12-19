@@ -17,7 +17,38 @@ export default function Home() {
       </Head>
 
       <main style={styles.page} role="main">
-        empty here
+        <section style={styles.wrap} aria-label="Intro">
+          <h1>Aleksy Głuchow</h1>
+          <div className="contact-info">
+          <span className="item">Physics student</span>
+          <span className="separator"> | </span>
+          <span className="item">
+            Jagiellonian University
+          </span>
+          <span className="separator"> | </span>
+          <span className="item">
+            Kraków, Poland
+          </span>
+        </div>
+
+          <div style={styles.photoWrap}>
+            <Image
+              src="/images/IMG_6909-1.JPG"
+              alt="Aleksy Głuchow"
+              width={640}
+              height={800}
+              sizes="320px"
+              quality={95}
+              priority
+              style={styles.photo}
+            />
+          </div>
+
+          <div style={styles.ctaRow}>
+            <Link href="/cv" className="btn btnPrimary">View CV</Link>
+            <Link href="/contact" className="btn btnGhost">Contact</Link>
+          </div>
+        </section>
       </main>
     </>
   );
