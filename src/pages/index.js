@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <main style={styles.page} role="main">
-        empty here
+        empty here HAHAHA
       </main>
     </>
   );
